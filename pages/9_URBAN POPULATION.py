@@ -4,7 +4,7 @@ import numpy as np
 import streamlit as st
 
 
-data = pd.read_csv("E:\code\GOD\GOD'sDATA.csv")
+data = pd.read_csv("GOD'sDATA.csv")
 data.columns=data.columns.str.strip()
 
 
