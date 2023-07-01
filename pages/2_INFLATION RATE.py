@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 url = "https://raw.githubusercontent.com/lethanhdatphumy/Data-Analysis-/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv"
 
 df = pd.read_csv(url)
@@ -16,16 +15,13 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-
 mean_inflation = df.groupby('Country')['Inflation_consumer_prices'].mean()
 mean_inflation_sorted = mean_inflation.sort_values(ascending=True)
-
 
 selected_countries = st.multiselect("Select Countries", mean_inflation_sorted.index)
 filtered_data = mean_inflation_sorted[selected_countries]
 
-
-fig1, ax = plt.subplots(figsize=(10, len(filtered_data)*0.5))
+fig1, ax = plt.subplots(figsize=(10, len(filtered_data) * 0.5))
 colors = plt.cm.viridis(np.linspace(0, 1, len(filtered_data)))
 ax.barh(filtered_data.index, filtered_data.values, color=colors)
 
