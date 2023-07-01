@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-url = "https://raw.githubusercontent.com/lethanhdatphumy/Data-Analysis-/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv"
 
-df = pd.read_csv(url)
+
+df = pd.read_csv("GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
 sns.set_style("whitegrid")
