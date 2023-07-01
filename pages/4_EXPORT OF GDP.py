@@ -3,8 +3,10 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 
-df = pd.read_csv("https://github.com/lethanhdatphumy/Data-Analysis-/blob/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv")
-df.columns=df.columns.str.strip()
+url = "https://raw.githubusercontent.com/lethanhdatphumy/Data-Analysis-/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv"
+
+df = pd.read_csv(url)
+df.columns = df.columns.str.strip()
 
 country = st.sidebar.selectbox('Select a Country', df['Country'].unique())
 filtered_data = df[df['Country'] == country]
