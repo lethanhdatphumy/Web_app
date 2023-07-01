@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Read the dataset
-df = pd.read_csv("E:\\code\\GOD\\GOD'sDATA.csv")
+df = pd.read_csv("GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
 # Set Streamlit page config
