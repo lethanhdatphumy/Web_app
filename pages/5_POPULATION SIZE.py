@@ -4,7 +4,7 @@ import streamlit as st
 import seaborn as sns
 
 
-data = pd.read_csv("GOD'sDATA.csv")
+data = pd.read_csv("https://github.com/lethanhdatphumy/Data-Analysis-/blob/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv")
 data.columns= data.columns.str.strip()
 
 
