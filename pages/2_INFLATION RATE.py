@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Read the dataset from the CSV file
-df = pd.read_csv("GOD'sDATA.csv")
+df = pd.read_csv("https://github.com/lethanhdatphumy/Data-Analysis-/blob/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
 # Set page config
