@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("E:\code\GOD\GOD'sDATA.csv")
+df = pd.read_csv("GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
 
