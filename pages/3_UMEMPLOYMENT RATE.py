@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 # Read the dataset from the CSV file
-df = pd.read_csv("E:\\code\\GOD\\GOD'sDATA.csv")
+df = pd.read_csv("GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
 sns.set_style("whitegrid")
