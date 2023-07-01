@@ -3,11 +3,12 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-# Read the dataset
-df = pd.read_csv("https://github.com/lethanhdatphumy/Data-Analysis-/blob/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv")
+
+url = "https://raw.githubusercontent.com/lethanhdatphumy/Data-Analysis-/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv"
+
+df = pd.read_csv(url)
 df.columns = df.columns.str.strip()
 
-# Set Streamlit page config
 st.set_page_config(
     page_title="Data Visualization",
     page_icon=":bar_chart:",
@@ -15,7 +16,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Create box plot for GDP Growth by Country
+
 fig1 = px.box(df, 
               x='Country', 
               y='GDP_growth', 
