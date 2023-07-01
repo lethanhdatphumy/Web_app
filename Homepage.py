@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 
-data = pd.read_csv("E:\\code\\GOD\\GOD'sDATA.csv")
+data = pd.read_csv("GOD'sDATA.csv")
 
 
 st.title("Welcome to My" )
