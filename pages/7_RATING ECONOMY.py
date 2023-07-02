@@ -1,49 +1,42 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 import streamlit as st
+import seaborn as sns
 
 
+data = pd.read_csv("GOD'sDATA.csv")
+data.columns= data.columns.str.strip()
 
 
-df = pd.read_csv("GOD'sDATA.csv")
-df.columns = df.columns.str.strip()
-
-order = ['low income', 'lower middle income', 'upper middle income', 'high income']
+year = st.sidebar.slider('Select a Year Range', 1990, 2020, (1990, 2020))
 
 
-df['Rating_economy'] = pd.Categorical(df['Rating_economy'], categories=order, ordered=True)
+filtered_data = data[(data['Year'] >= year[0]) & (data['Year'] <= year[1])]
 
 
-Rating_counts = df.groupby(['Rating_economy', 'Country']).size().unstack(fill_value=0)
+grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size_million_people'].sum().unstack()
 
 
-st.sidebar.header('User Input Parameters')
+sns.set_style("whitegrid")
+palette = sns.color_palette("husl", len(grouped_data.columns))
 
 
-default_countries = df['Country'].unique().tolist()
-selected_countries = st.sidebar.multiselect('Country', default_countries, default=default_countries)
+fig, ax = plt.subplots(figsize=(12, 8))
 
-Rating_counts = Rating_counts[selected_countries]
-
-
-plt.figure(figsize=(20,5))
-Rating_counts.plot(kind='bar', stacked=True)
-
-plt.title("RATING ECONOMY OF SOUTHEAST ASIAN COUNTRIES \nData source: World Bank", fontweight='bold', loc='center',color='#FF4500',fontsize=18)
-plt.xlabel("Rating economy", fontweight='bold',loc='center', fontsize=18, color='#00AA00')
-plt.ylabel("Count", fontweight='bold',fontsize=14, color='#00AA00')
-plt.tick_params(axis='x', labelsize=12)
-plt.tick_params(axis='y', labelsize=12)
-sns.set_style('whitegrid')
-plt.xticks(rotation=15)
-legend = plt.legend(title='Country', loc='lower center', bbox_to_anchor=(0.5, -0.4), ncol=5)
-
-for text in legend.get_texts():
-    text.set_fontweight('semibold')
-    text.set_fontsize(12)
-
-plt.tight_layout()
+grouped_data.plot(kind='bar', stacked=True, ax=ax, color=palette, grid=False, edgecolor='black')
 
 
-st.pyplot(plt)
+ax.set_title("Total population in Southeast Asia countries from 1990 to 2020", fontweight='bold', color='#333333', fontsize=22)
+ax.set_xlabel("Year", fontsize=16, color='#333333', fontweight='bold')
+ax.set_ylabel("Population (Million People)", fontsize=16, color='#333333', fontweight='bold')
+
+
+plt.xticks(fontsize=12, rotation=45)
+plt.yticks(fontsize=12)
+ax.get_yaxis().get_major_formatter().set_scientific(False)
+
+
+ax.legend(title='Country', title_fontsize='13', fontsize='11')
+
+
+st.pyplot(fig)
