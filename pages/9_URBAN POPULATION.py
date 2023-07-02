@@ -5,8 +5,8 @@ import streamlit as st
 
 
 
-df = pd.read_csv("GOD'sDATA.csv")
-df.columns = df.columns.str.strip()
+data = pd.read_csv("GOD'sDATA.csv")
+data.columns = df.columns.str.strip()
 
 
 st.sidebar.header('User Input Parameters')
