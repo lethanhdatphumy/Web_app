@@ -44,7 +44,7 @@ options.display.float_format = '{:.0f}'.format
 st.title("Welcome to My")
 st.header("Data Overview")
 
-
+st.write(data)
 
 
 
