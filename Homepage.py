@@ -48,7 +48,13 @@ data.columns = data.columns.str.strip()
 data["Year"] = data["Year"].astype(str)
 st.write(data)
 
-
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 
 st.sidebar.markdown("## Sidebar")
