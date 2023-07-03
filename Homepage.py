@@ -1,47 +1,52 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
+from pandas import options
 
-# Set page title and icon
 st.set_page_config(
-    page_title="My Data Overview",
-    page_icon=":wave:"
+    page_title="",
+    page_icon=":wave:",
 )
 
-# Set background image using CSS
 page_bg_img = '''
 <style>
-body {
-    background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
-    background-size: cover;
-    background-repeat: no-repeat;
+[data-testid="stAppViewContainer"]  {
+background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
+background-size:cover;
+background-repeat: no-repeat;
 }
-
-.stSidebar {
-    background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
-    background-size: cover;
-    background-repeat: no-repeat;
+[data-testid="stHeader"]{
+    background-color : rgba(0,0,0,0)
+    
 }
-
-.stImage > img {
-    border-radius: 50%;
+[data-testid="stSidebar"]{
+background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
+background-size:cover;
+background-repeat: no-repeat;
 }
+[data-testid="stImage"] > img{
+border-radius:50%;
 
+}
+[data-testid="stImage"]{
+}
 </style>
 '''
+
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Disable the thousands comma
-pd.set_option('display.float_format', '{:.0f}'.format)
+options.display.float_format = '{:.0f}'.format
 
-# Load the data
 data = pd.read_csv("GOD'sDATA.csv")
 data.columns = data.columns.str.strip()
 
-# Main content
-st.title("Welcome to My Data Overview")
+st.title("Welcome to My")
 st.header("Data Overview")
-st.write(data)
 
-# Sidebar
+st.write(data.to_string(float_format='{:.0f}'))
+
+
+
 st.sidebar.markdown("## Sidebar")
-st.sidebar.info("Select pages above ❤️")
+st.sidebar.info("Select pages above <3")
