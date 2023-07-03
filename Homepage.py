@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-from PIL import Image
-from pandas import options
 
 st.set_page_config(
     page_title="",
@@ -37,16 +35,14 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Disable the thousands comma
 
-
 data = pd.read_csv("GOD'sDATA.csv")
 data.columns = data.columns.str.strip()
-options.display.float_format = '{:.0f}'.format
+
 st.title("Welcome to My")
 st.header("Data Overview")
 
-st.write(data)
-
-
+# Use float_format argument to turn off comma formatting
+st.write(data, float_format='%.0f')
 
 st.sidebar.markdown("## Sidebar")
 st.sidebar.info("Select pages above <3")
