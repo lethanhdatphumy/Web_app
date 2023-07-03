@@ -46,8 +46,7 @@ st.header("Data Overview")
 
 st.write(data)
 
-sidebar_image = Image.open("C:\\Users\\Đạt\\Pictures\\Screenshot 2023-07-01 094636.jpg")
-st.sidebar.image(sidebar_image, use_column_width=True)
+
 
 st.sidebar.markdown("## Sidebar")
 st.sidebar.info("Select pages above <3")
