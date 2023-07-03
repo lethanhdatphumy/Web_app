@@ -44,7 +44,7 @@ data.columns = data.columns.str.strip()
 st.title("Welcome to My")
 st.header("Data Overview")
 
-st.write(data.to_string(float_format='{:.0f}'))
+st.write(data)
 
 
 
