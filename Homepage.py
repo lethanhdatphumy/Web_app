@@ -36,7 +36,6 @@ border-radius:50%;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Disable the thousands comma
-options.display.float_format = '{:.0f}'.format
 
 data = pd.read_csv("GOD'sDATA.csv")
 data.columns = data.columns.str.strip()
