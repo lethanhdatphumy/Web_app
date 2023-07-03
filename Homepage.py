@@ -37,16 +37,16 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
+st.title("Welcome to My")
+st.header("Data Overview")
+
+
 
 data = pd.read_csv("GOD'sDATA.csv")
 data.columns = data.columns.str.strip()
 data["Year"] = pd.to_numeric(data["Year"])
 data["Year"] = data["Year"].astype(int)
 st.write(data)
-
-st.title("Welcome to My")
-st.header("Data Overview")
-
 
 
 
