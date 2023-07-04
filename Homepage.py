@@ -46,7 +46,7 @@ data["Year"] = data["Year"].astype(int)
 
 st.title("Analysis of selected Socio- Economy Issues in in Southeast Asia countries")
 st.header("Using Python 3 for ploting")
-
+st.write(data)
 
 
 
