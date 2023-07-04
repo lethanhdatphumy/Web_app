@@ -37,24 +37,18 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
-st.title("Welcome to My")
-st.header("Data Overview")
-
-
 
 data = pd.read_csv("GOD'sDATA.csv")
 data.columns = data.columns.str.strip()
+data["Year"] = pd.to_numeric(data["Year"])
+data["Year"] = data["Year"].astype(int)
 
-data["Year"] = data["Year"].astype(str)
-st.write(data)
 
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+st.title("Analysis of selected Socio- Economy Issues in in Southeast Asia countries")
+st.header("Using Python 3 for ploting")
+
+
+
 
 
 st.sidebar.markdown("## Sidebar")
