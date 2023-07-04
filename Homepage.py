@@ -40,8 +40,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 data = pd.read_csv("GOD'sDATA.csv")
 data.columns = data.columns.str.strip()
-data["Year"] = pd.to_numeric(data["Year"])
-data["Year"] = data["Year"].astype(int)
+data["Year"] = data["Year"].astype(str)
 
 
 st.title("Analysis of selected Socio- Economy Issues in in Southeast Asia countries")
