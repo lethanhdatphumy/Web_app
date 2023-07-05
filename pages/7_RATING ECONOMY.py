@@ -12,7 +12,7 @@ df['Rating_economy'] = pd.Categorical(df['Rating_economy'], categories=order, or
 st.sidebar.header('User Input Parameters')
 
 default_countries = df['Country'].unique().tolist()
-selected_countries = st.sidebar.selectbox('Country', default_countries, default=default_countries)
+selected_countries = st.sidebar.multiselect('Country', default_countries, default=default_countries)
 
 selected_data = df[df['Country'].isin(selected_countries)]
 rating_counts = selected_data.groupby(['Rating_economy', 'Country']).size().unstack(fill_value=0)
@@ -31,7 +31,7 @@ legend = plt.legend(title='Country', loc='best', bbox_to_anchor=(0.5, -0.4), nco
 
 for text in legend.get_texts():
     text.set_fontweight('semibold')
-    text.set_fontsize(12)
+    text.set_fontsize(10)  # Here I reduce the font size of legend
 
 plt.tight_layout()
 st.pyplot(plt)
