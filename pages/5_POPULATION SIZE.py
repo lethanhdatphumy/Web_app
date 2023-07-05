@@ -7,7 +7,7 @@ data.columns = data.columns.str.strip()
 min_year = int(data['Year'].min())
 max_year = int(data['Year'].max())
 
-years = st.sidebar.selectbox('Select a Year', list(range(min_year, max_year + 1)), (1990, 2020))
+years = st.sidebar.selectbox('Select a Year', list(range(min_year, max_year + 1)), index=(1990, 2020))
 
 filtered_data = data[(data['Year'] >= years[0]) & (data['Year'] <= years[1])]
 
