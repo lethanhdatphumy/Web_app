@@ -21,17 +21,17 @@ plt.figure(figsize=(20,5))
 rating_counts.plot(kind='bar', stacked=True)
 
 plt.title("RATING ECONOMY OF SOUTHEAST ASIAN COUNTRIES \nData source: World Bank", fontweight='bold', loc='center',color='#FF4500',fontsize=18)
-plt.xlabel("Rating economy", fontweight='bold',loc='lower left', fontsize=18, color='#00AA00')
+plt.xlabel("Rating economy", fontweight='bold',loc='center', fontsize=18, color='#00AA00')
 plt.ylabel("Count", fontweight='bold',fontsize=14, color='#00AA00')
 plt.tick_params(axis='x', labelsize=12)
 plt.tick_params(axis='y', labelsize=12)
 sns.set_style('whitegrid')
 plt.xticks(rotation=15)
-legend = plt.legend(title='Country', loc='', bbox_to_anchor=(0.5, -0.4), ncol=5)
+legend = plt.legend(title='Country', loc='best', bbox_to_anchor=(0.5, -0.4), ncol=5)
 
 for text in legend.get_texts():
     text.set_fontweight('semibold')
-    text.set_fontsize(10)  
+    text.set_fontsize(10)  # Here I reduce the font size of legend
 
 plt.tight_layout()
 st.pyplot(plt)
