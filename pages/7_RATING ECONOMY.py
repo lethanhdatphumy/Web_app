@@ -36,7 +36,7 @@ plt.tick_params(axis='x', labelsize=12)
 plt.tick_params(axis='y', labelsize=12)
 sns.set_style('whitegrid')
 plt.xticks(rotation=15)
-legend = plt.legend(title='Country', loc='lower center', bbox_to_anchor=(0.5, -0.4), ncol=5)
+legend = plt.legend(title='Country', loc='upper left', bbox_to_anchor=(0.5, -0.4), ncol=5)
 
 for text in legend.get_texts():
     text.set_fontweight('semibold')
