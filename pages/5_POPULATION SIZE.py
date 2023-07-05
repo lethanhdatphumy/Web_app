@@ -21,7 +21,7 @@ year = st.sidebar.slider('Select a Year Range', int(df['Year'].min()), int(df['Y
 
 filtered_data = df[(df['Year'] >= year[0]) & (df['Year'] <= year[1])]
 
-grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size_million_people'].sum().unstack()
+grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size'].sum().unstack()
 
 sns.set_style("whitegrid")
 palette = sns.color_palette("husl", len(grouped_data.columns))
