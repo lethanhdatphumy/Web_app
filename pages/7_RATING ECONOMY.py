@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Read the data
-df = pd.read_csv(r'C:\Users\Dung\Desktop\DataPy.csv')
+df = pd.read_csv(r"GOD'sDATA.csv")
 
 # Create a sidebar for user inputs
 st.sidebar.header('User Input Parameters')
