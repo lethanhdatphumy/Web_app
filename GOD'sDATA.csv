@@ -1,311 +1,311 @@
-    Country,Year,GDP_growth,Inflation_consumer_prices,Unemployment_rate,Exports_of_GDP,Population_size_million_people,Urban_population,Life_expectancy,Rating_economy
-    Cambodia,1990,1.5,6.95,0.69,22.46,8910808,15546,55.43,low income
-    Cambodia,1991,2.5,7.15,0.73,34.46,9259362,15887,55.79,low income
-    Cambodia,1992,2.5,7.14,0.75,40.22,9718215,16234,56.02,low income
-    Cambodia,1993,1.5,8.53,0.8,48.72,10243550,16587,56.08,low income
-    Cambodia,1994,1.7,7.99,1.33,64.47,10636353,16946,56.04,low income
-    Cambodia,1995,4.0,10.5,0.78,77.77,10919528,17311,56.31,low income
-    Cambodia,1996,4.4,8.2,0.84,69.16,11182612,17683,56.35,low income
-    Cambodia,1997,5.4,7.8,0.91,78.93,11431569,182456,56.74,low income
-    Cambodia,1998,2.0,6.7,0.95,75.62,11669077,18355,57.03,low income
-    Cambodia,1999,6.8,4.6,0.9,94.18,11899006,18745,57.69,low income
-    Cambodia,2000,2.5,2.9,0.97,111.61,12118841,18586,58.63,low income
-    Cambodia,2001,3.0,2.2,1.03,114.14,12338192,18703,59.97,low income
-    Cambodia,2002,2.7,2.5,1.1,119.69,12561779,18824,61.23,low income
-    Cambodia,2003,4.5,2.9,1.11,123.08,12787710,18937,62.52,low income
-    Cambodia,2004,5.5,3.7,1.13,134.51,13016371,19055,63.55,low income
-    Cambodia,2005,7.3,4.5,1.13,136.83,13246583,19174,64.29,low income
-    Cambodia,2006,7.0,2.6,1.21,144.61,13477779,19293,65.06,low income
-    Cambodia,2007,7.0,2.7,1.26,138.27,13714791,19413,65.73,low income
-    Cambodia,2008,7.1,2.5,0.82,133.32,13943888,19571,66.47,low income
-    Cambodia,2009,7.0,2.6,0.58,105.14,14155740,19934,67.44,low income
-    Cambodia,2010,7.1,4.2,0.77,113.6,14363532,20294,67.71,low income
-    Cambodia,2011,7.1,5.4,0.58,113.58,14573885,20663,68.42,low income
-    Cambodia,2012,7.0,2.9,0.51,120.6,14786640,21037,68.92,low income
-    Cambodia,2013,6.9,3.4,0.44,130.05,14999683,21415,69.3,low income
-    Cambodia,2014,7.0,3.9,0.69,129.61,15210817,21799,69.74,low income
-    Cambodia,2015,7.1,3.4,0.39,127.86,15417523,22188,69.87,low income
-    Cambodia,2016,7.1,3.0,0.72,126.95,15624584,22582,70.22,low income
-    Cambodia,2017,6.9,2.9,0.14,124.79,15830689,22984,70.52,low income
-    Cambodia,2018,7.0,2.2,0.14,124.9,16025238,23388,70.56,low income
-    Cambodia,2019,6.7,1.9,0.15,123.56,16207746,23805,70.69,low income
-    Cambodia,2020,3.1,2.9,0.33,123.5,16396860,24232,70.42,low income
-    Indonesia,1990,8.0,7.1,2.54,52.89,182159874,30584,63.18,lower middle income
-    Indonesia,1991,9.1,9.8,2.62,54.84,185361228,31613,63.54,lower middle income
-    Indonesia,1992,7.2,7.6,2.73,57.43,188558416,32703,64.13,lower middle income
-    Indonesia,1993,7.0,9.4,2.78,50.52,191737287,33808,64.6,lower middle income
-    Indonesia,1994,6.3,5.5,4.37,51.88,194928533,34933,64.86,lower middle income
-    Indonesia,1995,5.6,6.5,4.5,53.96,198140162,36076,65.24,lower middle income
-    Indonesia,1996,4.9,5.0,4.86,52.26,201373791,37235,65.36,lower middle income
-    Indonesia,1997,4.2,6.4,4.68,55.99,204628007,38406,65.73,lower middle income
-    Indonesia,1998,4.7,7.9,5.46,96.19,207855486,39593,65.96,lower middle income
-    Indonesia,1999,4.8,6.6,6.36,62.94,210996910,40792,66.22,lower middle income
-    Indonesia,2000,4.8,9.4,6.08,71.44,214072421,42002,66.43,lower middle income
-    Indonesia,2001,5.6,6.4,6.08,69.79,217112437,42783,66.76,lower middle income
-    Indonesia,2002,6.0,5.4,6.6,59.08,220115092,43568,67.13,lower middle income
-    Indonesia,2003,6.1,6.4,6.66,53.62,223080121,44356,67.41,lower middle income
-    Indonesia,2004,6.0,8.4,7.3,59.76,225938595,45149,66.75,lower middle income
-    Indonesia,2005,6.2,6.4,7.94,63.99,228805144,45942,67.65,lower middle income
-    Indonesia,2006,6.5,3.4,7.55,56.66,231797427,46738,67.91,lower middle income
-    Indonesia,2007,6.2,6.4,8.06,54.83,234858289,47535,68.19,lower middle income
-    Indonesia,2008,6.0,8.4,7.21,58.56,237936543,48335,68.23,lower middle income
-    Indonesia,2009,6.5,6.4,6.11,45.51,240981299,49134,68.49,lower middle income
-    Indonesia,2010,6.2,3.4,5.61,46.7,244016173,49914,68.68,lower middle income
-    Indonesia,2011,6.3,3.4,5.15,50.18,247099697,50595,68.82,lower middle income
-    Indonesia,2012,6.1,3.0,4.47,49.58,250222695,51276,68.97,lower middle income
-    Indonesia,2013,5.8,6.4,4.34,48.64,253275918,51955,69.26,lower middle income
-    Indonesia,2014,5.6,3.4,4.05,48.08,256229761,52635,69.53,lower middle income
-    Indonesia,2015,5.43,3.4,4.51,41.94,259091970,53313,69.7,lower middle income
-    Indonesia,2016,5.2,3.4,4.3,37.42,261850182,53989,69.8,lower middle income
-    Indonesia,2017,5.1,3.7,3.78,39.36,264498852,54659,69.94,lower middle income
-    Indonesia,2018,5.0,3.0,4.39,43.07,267066843,55325,70.34,lower middle income
-    Indonesia,2019,5.2,3.4,3.59,37.63,269582878,55985,70.52,lower middle income
-    Indonesia,2020,4.3,8.4,4.25,32.98,271857970,56641,69.92,lower middle income
-    Myanmar,1990,7.8,17.63,0.76,1.25,40099553,25243,56.66,low income
-    Myanmar,1991,7.6,32.27,0.66,1.26,40680533,25418,57.01,low income
-    Myanmar,1992,6.7,21.91,0.7,3.57,41237813,25593,57.25,low income
-    Myanmar,1993,0.6,31.83,0.69,4.56,41788302,25769,57.63,low income
-    Myanmar,1994,4.8,24.1,0.69,4.14,42337109,25946,57.96,low income
-    Myanmar,1995,4.4,25.19,0.7,6.22,42880186,26124,58.26,low income
-    Myanmar,1996,4.7,16.28,0.71,6.15,43423369,26303,58.94,low income
-    Myanmar,1997,5.2,29.7,0.71,7.15,43972046,26482,59.24,low income
-    Myanmar,1998,6.3,51.49,0.67,8.12,44516185,26663,59.79,low income
-    Myanmar,1999,7.4,18.4,0.65,9.46,45041636,26843,59.88,low income
-    Myanmar,2000,5.9,0.11,0.67,10.57,45538332,27025,60.16,low income
-    Myanmar,2001,5.5,21.1,0.67,10.16,46014826,27208,60.42,low income
-    Myanmar,2002,5.5,57.07,0.66,11.12,46480230,27391,60.73,low income
-    Myanmar,2003,5.5,36.59,0.67,12.15,46924293,27575,60.98,low income
-    Myanmar,2004,5.5,4.53,0.67,13.47,47338446,27486,61.25,low income
-    Myanmar,2005,8.2,9.37,0.68,15.27,47724471,27946,61.6,low income
-    Myanmar,2006,7.9,16.45,0.69,14.22,48088274,28132,61.89,low income
-    Myanmar,2007,7.5,35.02,0.71,14.47,48445647,28319,62.37,low income
-    Myanmar,2008,6.5,26.8,0.71,15.65,48729486,28507,62.59,low income
-    Myanmar,2009,5.9,1.47,0.72,16.49,49015836,28695,63.16,low income
-    Myanmar,2010,6.8,7.72,0.77,18.8,49390988,28885,63.33,low income
-    Myanmar,2011,6.5,5.02,0.75,16.13,49794522,29075,63.9,low income
-    Myanmar,2012,6.4,1.47,0.75,11.86,50218185,29266,64.14,low income
-    Myanmar,2013,6.2,5.64,0.76,30.98,50648334,29457,64.82,low income
-    Myanmar,2014,6.1,4.95,0.77,40.53,51072436,29354,65.06,low income
-    Myanmar,2015,6.2,9.45,1.18,44.95,51483949,29858,65.56,low income
-    Myanmar,2016,6.3,6.93,1.56,53.92,51892349,30082,65.69,low income
-    Myanmar,2017,6.5,4.57,0.87,61.02,52288341,30322,65.84,low income
-    Myanmar,2018,6.8,6.87,0.5,62.45,52666014,30579,66.47,low income
-    Myanmar,2019,6.4,8.83,1.06,60.69,53040212,30852,66.61,low income
-    Myanmar,2020,1.3,5.73,2.17,55.1,53423198,31141,66.8,low income
-    Vietnam,1990,5.8,3.4,1.2,81.32,66912613,20257,69.21,low income
-    Vietnam,1991,7.2,3.87,1.4,66.95,68358820,20629,69.85,low income
-    Vietnam,1992,8.5,3.2,1.89,73.58,69788747,21006,69.96,low income
-    Vietnam,1993,8.2,4.8,1.73,66.21,71176405,21387,70.62,low income
-    Vietnam,1994,9.5,4.62,1.64,77.47,72501087,21774,70.76,low income
-    Vietnam,1995,8.4,5.74,1.89,74.72,73759110,22166,71.38,low income
-    Vietnam,1996,8.0,5.67,1.93,92.71,74946448,22563,71.51,low income
-    Vietnam,1997,7.3,3.21,2.87,94.34,76058603,22965,71.8,low income
-    Vietnam,1998,7.8,7.27,2.29,97.00,77128424,23371,72.11,low income
-    Vietnam,1999,4.8,4.12,2.33,102.79,78123713,23817,72.32,low income
-    Vietnam,2000,6.2,1.71,2.26,111.42,79001142,24374,72.46,low income
-    Vietnam,2001,8.2,0.43,2.76,111.96,79817777,24937,72.65,low income
-    Vietnam,2002,7.3,3.83,2.12,116.7,80642308,25511,72.8,low income
-    Vietnam,2003,8.4,3.23,2.25,124.33,81475825,26092,72.98,low income
-    Vietnam,2004,8.2,7.75,2.14,133.02,82311227,26683,73.14,low income
-    Vietnam,2005,8.4,8.28,2.08,130.71,83142095,27281,73.27,low income
-    Vietnam,2006,6.8,7.42,2.06,138.31,83951800,27888,73.32,low income
-    Vietnam,2007,5.4,8.34,2.03,154.61,84762269,28504,73.44,low income
-    Vietnam,2008,6.2,23.12,1.99,154.32,85597241,29128,73.41,low income
-    Vietnam,2009,5.4,6.72,1.74,134.71,86482923,29762,73.5,low income
-    Vietnam,2010,6.8,9.21,1.11,113.98,87411012,30417,73.51,low income
-    Vietnam,2011,8.2,18.68,1.2,125.26,88349117,30145,73.69,low income
-    Vietnam,2012,6.0,9.09,1.03,123.22,89301326,31752,73.7,low income
-    Vietnam,2013,6.7,6.59,1.32,130.85,90267739,32429,73.78,low income
-    Vietnam,2014,6.8,4.08,1.26,135.41,91235504,33115,73.86,low income
-    Vietnam,2015,6.8,0.63,1.85,144.91,92191398,33809,73.88,low income
-    Vietnam,2016,7.1,2.67,1.85,145.41,93126529,34512,73.94,low income
-    Vietnam,2017,6.8,3.52,1.87,160.98,94033048,35213,73.96,low income
-    Vietnam,2018,7.1,3.54,1.16,164.66,94914330,35919,73.98,low income
-    Vietnam,2019,2.9,2.8,1.68,164.7,95776716,36628,74.09,low income
-    Vietnam,2020,2.9,3.22,2.1,163.25,96648685,37984,75.38,low income
-    Philippines,1990,0.5,12.18,8.13,42.92,61558898,46986,65.91,lower middle income
-    Philippines,1991,3.7,19.26,10.6,44.22,63039751,46901,66.3,lower middle income
-    Philippines,1992,2.2,8.65,9.87,44.99,64543525,46815,67.09,lower middle income
-    Philippines,1993,3.4,6.72,9.29,50.47,66083321,46732,67.54,lower middle income
-    Philippines,1994,2.2,10.39,9.48,52.53,67650283,46645,67.94,lower middle income
-    Philippines,1995,5.2,6.83,9.53,57.33,69250468,45561,68.22,lower middle income
-    Philippines,1996,5.3,7.48,8.56,63.86,70944969,46475,68.61,lower middle income
-    Philippines,1997,3.1,5.59,8.78,77.23,72718837,46395,68.88,lower middle income
-    Philippines,1998,5.0,9.23,10.25,80.08,74491918,46305,69.1,lower middle income
-    Philippines,1999,5.8,5.94,9.81,77.16,76249064,46225,69.3,lower middle income
-    Philippines,2000,4.5,3.98,11.19,85.15,77958223,46135,69.41,lower middle income
-    Philippines,2001,4.4,5.35,3.7,84.9,79626086,46054,69.61,lower middle income
-    Philippines,2002,4.5,2.72,3.2,83.84,81285572,45965,69.78,lower middle income
-    Philippines,2003,4.8,2.29,3.53,87.57,82942837,45881,69.92,lower middle income
-    Philippines,2004,4.2,4.83,3.55,87.13,84607501,45795,70.04,lower middle income
-    Philippines,2005,4.5,6.52,3.8,83.85,86261250,45716,70.24,lower middle income
-    Philippines,2006,5.8,5.49,4.05,80.85,87901835,45625,70.28,lower middle income
-    Philippines,2007,7.2,2.9,3.43,73.64,89561377,45547,70.48,lower middle income
-    Philippines,2008,4.9,8.26,3.72,67.68,91252326,45455,70.56,lower middle income
-    Philippines,2009,3.7,4.22,3.86,60.89,92946951,45371,70.63,lower middle income
-    Philippines,2010,6.8,3.79,3.61,66.1,94636700,45332,70.75,lower middle income
-    Philippines,2011,3.8,4.72,3.59,60.8,96337913,45522,70.79,lower middle income
-    Philippines,2012,7.2,3.03,3.5,57.84,98032317,45712,70.88,lower middle income
-    Philippines,2013,6.9,2.58,3.5,55.82,99700107,45903,70.84,lower middle income
-    Philippines,2014,6.1,3.6,3.6,57.47,101325201,46093,71.15,lower middle income
-    Philippines,2015,7.1,0.67,3.07,59.14,103031365,46284,71.27,lower middle income
-    Philippines,2016,6.9,1.25,2.7,61.78,104875266,46475,71.39,lower middle income
-    Philippines,2017,6.0,2.85,2.55,68.17,106738501,46682,71.52,lower middle income
-    Philippines,2018,6.9,5.31,2.34,72.16,108568836,46907,71.69,lower middle income
-    Philippines,2019,6.0,2.39,2.24,68.84,110380804,47149,71.87,lower middle income
-    Philippines,2020,11.9,2.39,2.52,58.17,112190977,47408,72.12,lower middle income
-    Malaysia,1990,8.5,4.1,4.5,146.89,17517054,49794,71.31,upper middle income 
-    Malaysia,1991,9.4,2.8,4.9,159.31,18017464,50576,71.44,upper middle income 
-    Malaysia,1992,8.5,2.2,3.71,150.61,18526708,51814,71.53,upper middle income 
-    Malaysia,1993,7.5,2.9,4.11,157.94,19050077,53109,71.83,upper middle income 
-    Malaysia,1994,8.9,3.1,4.02,179.9,19588703,54402,72.16,upper middle income 
-    Malaysia,1995,9.1,3.2,3.15,192.11,20136888,55688,72.38,upper middle income 
-    Malaysia,1996,9.7,3.8,2.52,181.77,20689051,56969,72.33,upper middle income 
-    Malaysia,1997,8.5,2.8,2.45,185.67,21249178,58237,72.28,upper middle income 
-    Malaysia,1998,8.1,5.8,3.2,209.49,21810542,59496,72.17,upper middle income 
-    Malaysia,1999,7.0,2.6,3.43,217.57,22368655,60742,72.28,upper middle income 
-    Malaysia,2000,6.1,1.8,3.5,220.41,22945150,61977,72.78,upper middle income 
-    Malaysia,2001,4.6,1.7,3.53,203.36,23542517,62922,73.34,upper middle income 
-    Malaysia,2002,4.2,1.4,3.48,199.36,24142445,63856,73.56,upper middle income 
-    Malaysia,2003,4.8,1.0,3.61,194.2,24739411,64785,73.8,upper middle income 
-    Malaysia,2004,5.8,1.4,3.54,210.37,25333247,65694,73.9,upper middle income 
-    Malaysia,2005,4.9,3.0,3.53,203.85,25923536,66594,74.1,upper middle income 
-    Malaysia,2006,4.4,3.6,3.18,202.58,26509413,67483,74.16,upper middle income 
-    Malaysia,2007,4.6,2.0,3.23,192.47,27092604,68369,74.21,upper middle income 
-    Malaysia,2008,5.8,5.4,3.32,176.67,27664296,69225,74.25,upper middle income 
-    Malaysia,2009,5.0,0.6,3.66,162.56,28217204,70075,74.23,upper middle income 
-    Malaysia,2010,4.2,1.7,3.39,157.94,28717731,70912,74.44,upper middle income 
-    Malaysia,2011,5.6,3.2,3.05,154.94,29184133,71609,74.75,upper middle income 
-    Malaysia,2012,6.3,1.7,3.1,147.84,29660212,72275,74.94,upper middle income 
-    Malaysia,2013,5.1,2.1,3.16,142.72,30134807,72934,75.04,upper middle income 
-    Malaysia,2014,6.0,3.2,2.88,138.31,30606459,73577,75.15,upper middle income 
-    Malaysia,2015,4.7,2.1,3.1,131.37,31068833,74213,75.09,upper middle income 
-    Malaysia,2016,6.0,2.1,3.44,126.9,31526418,74854,75.29,upper middle income 
-    Malaysia,2017,4.2,3.7,3.41,133.16,31975806,75447,75.48,upper middle income 
-    Malaysia,2018,5.9,1.0,3.3,130.4,32399271,76036,75.64,upper middle income 
-    Malaysia,2019,4.7,0.7,3.26,123.03,32804020,76607,75.76,upper middle income 
-    Malaysia,2020,5.6,1.2,4.54,116.83,33199993,77165,75.94,upper middle income 
-    Thailand,1990,9.3,5.86,2.21,75.78,55228410,29424,70.45,lower middle income
-    Thailand,1991,11.3,5.71,2.63,78.47,56099865,29593,70.72,lower middle income
-    Thailand,1992,10.3,4.14,1.35,77.95,56939020,29763,70.89,lower middle income
-    Thailand,1993,8.3,3.31,1.49,77.75,57776082,29934,71.07,lower middle income
-    Thailand,1994,9.4,5.05,1.35,81.25,58610010,30105,71.23,lower middle income
-    Thailand,1995,7.1,5.82,1.1,89.76,59424834,30276,70.95,lower middle income
-    Thailand,1996,8.7,5.81,1.07,84.27,60211096,30449,71.65,lower middle income
-    Thailand,1997,8.0,5.63,0.87,95.05,60989108,30622,72.5,lower middle income
-    Thailand,1998,6.8,7.99,3.4,100.24,61745217,30795,72.86,lower middle income
-    Thailand,1999,5.3,0.28,2.97,100.71,62442651,30969,72.54,lower middle income
-    Thailand,2000,2.3,1.59,2.39,121.3,63066603,31386,72.32,lower middle income
-    Thailand,2001,4.2,1.63,2.6,120.27,63649892,32548,72.61,lower middle income
-    Thailand,2002,4.2,0.7,1.82,114.97,64222580,33734,72.93,lower middle income
-    Thailand,2003,4.9,1.8,1.54,116.69,64776956,34941,73.16,lower middle income
-    Thailand,2004,6.7,2.76,1.51,127.41,65311166,36169,73.08,lower middle income
-    Thailand,2005,4.9,4.54,1.35,137.85,65821360,37411,73.82,lower middle income
-    Thailand,2006,2.3,4.64,1.22,134.09,66319525,38673,74.94,lower middle income
-    Thailand,2007,2.3,2.24,1.18,129.87,66826754,39956,75.19,lower middle income
-    Thailand,2008,4.5,5.47,1.18,140.44,67328239,41242,75.49,lower middle income
-    Thailand,2009,5.0,0.85,1.49,119.27,67813654,42543,75.84,lower middle income
-    Thailand,2010,2.9,3.25,0.62,127.25,68270489,43856,76.13,lower middle income
-    Thailand,2011,7.1,3.81,0.66,139.68,68712846,44698,76.42,lower middle income
-    Thailand,2012,3.3,3.01,0.58,137.67,69157023,45445,76.77,lower middle income
-    Thailand,2013,3.0,2.18,0.25,132.46,69578602,46193,77.08,lower middle income
-    Thailand,2014,3.9,1.9,0.58,130.91,69960943,46943,77.42,lower middle income
-    Thailand,2015,3.3,0.9,0.6,124.84,70294397,47694,77.72,lower middle income
-    Thailand,2016,3.2,0.19,0.69,120.58,70607037,48448,78.05,lower middle income
-    Thailand,2017,4.1,0.67,0.83,120.89,70898202,49231,78.39,lower middle income
-    Thailand,2018,2.4,1.06,0.77,120.84,71127802,49949,78.66,lower middle income
-    Thailand,2019,6.1,0.71,0.72,109.67,71307763,50692,78.98,lower middle income
-    Thailand,2020,6.1,0.85,1.1,97.82,71475664,51436,79.27,lower middle income
-    Brunei,1990,5.5,2.14,4.6,99.08,689457,66438,71.66,upper middle income 
-    Brunei,1991,1.5,1.60,4.7,106.85,269860,66585,71.87,upper middle income 
-    Brunei,1992,3.3,1.28,4.86,105.78,277416,67078,72.08,upper middle income 
-    Brunei,1993,3.5,4.25,4.82,106.53,284713,67604,72.31,upper middle income 
-    Brunei,1994,3.5,2.46,5.03,99.49,291935,68126,72.55,upper middle income 
-    Brunei,1995,2.5,5.97,5.18,115.54,299097,68644,72.82,upper middle income 
-    Brunei,1996,0.9,2.00,5.24,120.57,306196,69158,73.1,upper middle income 
-    Brunei,1997,1.8,1.71,5.19,115.68,313215,69666,73.36,upper middle income 
-    Brunei,1998,4.0,0.44,5.33,107.88,320152,70174,73.62,upper middle income 
-    Brunei,1999,2.2,0.42,5.58,104.22,327045,70669,73.86,upper middle income 
-    Brunei,2000,3.3,1.56,5.68,103.17,789111,71164,74.08,upper middle income 
-    Brunei,2001,3.9,0.60,5.79,108.72,340748,71652,74.28,upper middle income 
-    Brunei,2002,3.6,2.31,5.94,108.75,347463,72046,74.43,upper middle income 
-    Brunei,2003,0.7,0.30,6.01,105.26,354045,72421,74.56,upper middle income 
-    Brunei,2004,1.6,0.81,6.02,100.59,360461,72794,74.65,upper middle income 
-    Brunei,2005,1.8,1.24,6.13,97.46,366717,73163,74.73,upper middle income 
-    Brunei,2006,2.5,0.16,6.41,96.94,372808,73529,74.78,upper middle income 
-    Brunei,2007,2.5,0.97,6.33,95.75,378748,73892,74.82,upper middle income 
-    Brunei,2008,0.6,2.08,6.35,105.91,384568,74252,74.84,upper middle income 
-    Brunei,2009,2.8,1.04,6.47,108.57,390311,74608,74.85,upper middle income 
-    Brunei,2010,0.1,0.36,6.77,95.37,865566,74961,74.85,upper middle income 
-    Brunei,2011,2.8,0.14,6.94,99.54,401506,75310,74.86,upper middle income 
-    Brunei,2012,2.9,0.11,6.92,105.64,406634,75656,74.83,upper middle income 
-    Brunei,2013,0.8,0.39,6.88,110.94,411702,75997,74.8,upper middle income 
-    Brunei,2014,0.4,0.21,6.97,102.42,416656,76332,74.78,upper middle income 
-    Brunei,2015,2.7,0.49,7.79,89.89,421437,76663,74.75,upper middle income 
-    Brunei,2016,3.6,0.28,8.38,87.32,425994,76998,74.73,upper middle income 
-    Brunei,2017,3.9,1.26,9.32,85.18,430276,77312,74.72,upper middle income 
-    Brunei,2018,3.9,1.03,8.7,93.9,434274,77629,74.71,upper middle income 
-    Brunei,2019,3.6,0.39,6.92,108.51,438048,77942,74.75,upper middle income 
-    Brunei,2020,0.3,1.94,7.68,110.29,985641,78251,74.8,upper middle income 
-    Laos,1990,5.7,42.7,2.83,35.85,4314443,15437,53.71,low income
-    Laos,1991,7.0,66.0,2.61,38.18,4437225,15782,54.46,low income
-    Laos,1992,7.1,85.7,2.58,44.13,4561106,16133,54.95,low income
-    Laos,1993,5.7,29.7,2.59,52.63,4685296,16498,55.44,low income
-    Laos,1994,5.3,24.7,2.51,64.81,4807950,16854,55.75,low income
-    Laos,1995,5.0,29.4,2.6,60.55,4927432,17378,56.39,low income
-    Laos,1996,2.9,21.0,2.48,63.76,5043914,18234,56.89,low income
-    Laos,1997,1.7,7.4,2.37,65.16,5150538,19124,57.29,low income
-    Laos,1998,2.1,0.4,2.38,84.27,5246922,20039,57.67,low income
-    Laos,1999,5.8,0.3,2.1,80.06,5340056,20991,57.87,low income
-    Laos,2000,7.0,12.7,2.04,68.84,5430853,21977,58.38,low income
-    Laos,2001,6.7,9.8,1.91,65.9,5519707,22993,59.07,low income
-    Laos,2002,7.0,6.9,1.78,67.25,5606101,24044,59.53,low income
-    Laos,2003,7.5,5.6,1.64,60.57,5689065,25126,60.03,low income
-    Laos,2004,7.5,6.3,1.5,66.08,5768167,26242,60.29,low income
-    Laos,2005,6.4,7.6,1.35,71.79,5852970,27186,60.98,low income
-    Laos,2006,5.4,5.4,1.19,81.96,5946593,27748,61.49,low income
-    Laos,2007,6.9,4.4,1.09,79.21,6041348,28316,62.08,low income
-    Laos,2008,7.5,9.5,0.96,81.85,6135861,28893,62.6,low income
-    Laos,2009,6.5,0.3,0.85,76.93,6229930,29475,63.27,low income
-    Laos,2010,8.0,6.5,0.71,84.72,6323418,30064,63.97,low income
-    Laos,2011,7.5,9.6,1.07,91.7,6416327,30654,64.74,low income
-    Laos,2012,7.0,5.2,1.42,98.19,6508803,31264,65.36,low income
-    Laos,2013,6.8,5.5,1.77,98.18,6600742,31872,65.72,low income
-    Laos,2014,6.9,4.9,2.15,99.06,6691454,32487,66.36,low income
-    Laos,2015,6.8,1.3,2.52,85.8,6787419,33108,66.67,low income
-    Laos,2016,6.6,1.5,2.9,75.09,6891363,33736,67.17,low income
-    Laos,2017,6.8,0.7,3.27,69.55,6997917,34368,67.43,low income
-    Laos,2018,4.9,2.1,3.27,78.63,7105006,35004,67.63,low income
-    Laos,2019,6.8,3.1,3.27,56.57,7212053,35645,68.14,low income
-    Laos,2020,4.0,1.4,3.58,46.46,7319399,36456,68.5,low income
-    Singapore,1990,10.3,3.46,2.18,344.33,3047132,100,75.3,high income
-    Singapore,1991,9.9,3.43,3.09,323.89,3135083,100,75.65,high income
-    Singapore,1992,8.8,2.26,3.07,311.31,3230698,100,75.95,high income
-    Singapore,1993,10.3,2.29,3.03,313.42,3313471,100,76.05,high income
-    Singapore,1994,9.5,3.1,3.3,316.22,3419048,100,76.2,high income
-    Singapore,1995,9.6,1.72,3.57,345.46,3524506,100,76.3,high income
-    Singapore,1996,10.0,1.38,2.5,334.91,3670704,100,76.6,high income
-    Singapore,1997,8.8,2.1,3.41,323.86,3796038,100,76.9,high income
-    Singapore,1998,6.5,0.27,4.85,312.08,3927213,100,77.3,high income
-    Singapore,1999,10.1,0.02,3.7,336.48,3958723,100,77.55,high income
-    Singapore,2000,9.9,1.36,3.76,364.36,4027887,100,77.95,high income
-    Singapore,2001,5.4,1.4,5.65,349.29,4138012,100,78.25,high income
-    Singapore,2002,8.4,0.39,5.93,349.75,4175950,100,78.55,high income
-    Singapore,2003,8.2,0.51,5.84,377.22,4114826,100,79.04,high income
-    Singapore,2004,4.4,1.66,5.59,401.52,4166664,100,79.49,high income
-    Singapore,2005,9.9,0.43,4.48,420.43,4265762,100,79.99,high income
-    Singapore,2006,4.9,0.96,3.9,425.36,4401365,100,80.14,high income
-    Singapore,2007,9.9,2.1,3.96,394.29,4588599,100,80.44,high income
-    Singapore,2008,8.8,6.63,5.86,437.33,4839396,100,80.79,high income
-    Singapore,2009,1.3,0.6,4.12,358.19,4987573,100,81.24,high income
-    Singapore,2010,3.9,2.82,3.89,369.69,5076732,100,81.54,high income
-    Singapore,2011,4.9,5.25,3.72,379.1,5183688,100,81.74,high income
-    Singapore,2012,3.6,4.58,3.86,369.21,5312437,100,82.05,high income
-    Singapore,2013,2.4,2.36,3.74,367.04,5399162,100,82.25,high income
-    Singapore,2014,3.0,1.03,3.79,360.47,5469724,100,82.5,high income
-    Singapore,2015,2.2,0.52,4.08,329.47,5535002,100,82.74,high income
-    Singapore,2016,3.9,0.53,4.2,303.33,5607283,100,82.85,high income
-    Singapore,2017,2.2,0.58,3.64,316.39,5612253,100,83.1,high income
-    Singapore,2018,3.1,0.44,3.1,324.32,5638676,100,83.3,high income
-    Singapore,2019,5.4,0.57,4.1,321.81,5703569,100,83.6,high income
-    Singapore,2020,5.8,0.18,3.62,331.73,5685807,100,83.74,high income
+Country,Year,GDP_growth,Inflation_consumer_prices,Unemployment_rate,Exports_of_GDP,Population_size,Urban_population,Life_expectancy,Rating_economy
+Cambodia,1990,1.5,6.95,0.69,22.46,8910808,15546,55.43,low income
+Cambodia,1991,2.5,7.15,0.73,34.46,9259362,15887,55.79,low income
+Cambodia,1992,2.5,7.14,0.75,40.22,9718215,16234,56.02,low income
+Cambodia,1993,1.5,8.53,0.8,48.72,10243550,16587,56.08,low income
+Cambodia,1994,1.7,7.99,1.33,64.47,10636353,16946,56.04,low income
+Cambodia,1995,4.0,10.5,0.78,77.77,10919528,17311,56.31,low income
+Cambodia,1996,4.4,8.2,0.84,69.16,11182612,17683,56.35,low income
+Cambodia,1997,5.4,7.8,0.91,78.93,11431569,18245,56.74,low income
+Cambodia,1998,2.0,6.7,0.95,75.62,11669077,18355,57.03,low income
+Cambodia,1999,6.8,4.6,0.9,94.18,11899006,18745,57.69,low income
+Cambodia,2000,2.5,2.9,0.97,111.61,12118841,18586,58.63,low income
+Cambodia,2001,3.0,2.2,1.03,114.14,12338192,18703,59.97,low income
+Cambodia,2002,2.7,2.5,1.1,119.69,12561779,18824,61.23,low income
+Cambodia,2003,4.5,2.9,1.11,123.08,12787710,18937,62.52,low income
+Cambodia,2004,5.5,3.7,1.13,134.51,13016371,19055,63.55,low income
+Cambodia,2005,7.3,4.5,1.13,136.83,13246583,19174,64.29,low income
+Cambodia,2006,7.0,2.6,1.21,144.61,13477779,19293,65.06,low income
+Cambodia,2007,7.0,2.7,1.26,138.27,13714791,19413,65.73,low income
+Cambodia,2008,7.1,2.5,0.82,133.32,13943888,19571,66.47,low income
+Cambodia,2009,7.0,2.6,0.58,105.14,14155740,19934,67.44,low income
+Cambodia,2010,7.1,4.2,0.77,113.6,14363532,20294,67.71,low income
+Cambodia,2011,7.1,5.4,0.58,113.58,14573885,20663,68.42,low income
+Cambodia,2012,7.0,2.9,0.51,120.6,14786640,21037,68.92,low income
+Cambodia,2013,6.9,3.4,0.44,130.05,14999683,21415,69.3,low income
+Cambodia,2014,7.0,3.9,0.69,129.61,15210817,21799,69.74,low income
+Cambodia,2015,7.1,3.4,0.39,127.86,15417523,22188,69.87,low income
+Cambodia,2016,7.1,3.0,0.72,126.95,15624584,22582,70.22,low income
+Cambodia,2017,6.9,2.9,0.14,124.79,15830689,22984,70.52,low income
+Cambodia,2018,7.0,2.2,0.14,124.9,16025238,23388,70.56,low income
+Cambodia,2019,6.7,1.9,0.15,123.56,16207746,23805,70.69,low income
+Cambodia,2020,3.1,2.9,0.33,123.5,16396860,24232,70.42,low income
+Indonesia,1990,8.0,7.1,2.54,52.89,182159874,30584,63.18,lower middle income
+Indonesia,1991,9.1,9.8,2.62,54.84,185361228,31613,63.54,lower middle income
+Indonesia,1992,7.2,7.6,2.73,57.43,188558416,32703,64.13,lower middle income
+Indonesia,1993,7.0,9.4,2.78,50.52,191737287,33808,64.6,lower middle income
+Indonesia,1994,6.3,5.5,4.37,51.88,194928533,34933,64.86,lower middle income
+Indonesia,1995,5.6,6.5,4.5,53.96,198140162,36076,65.24,lower middle income
+Indonesia,1996,4.9,5.0,4.86,52.26,201373791,37235,65.36,lower middle income
+Indonesia,1997,4.2,6.4,4.68,55.99,204628007,38406,65.73,lower middle income
+Indonesia,1998,4.7,7.9,5.46,96.19,207855486,39593,65.96,lower middle income
+Indonesia,1999,4.8,6.6,6.36,62.94,210996910,40792,66.22,lower middle income
+Indonesia,2000,4.8,9.4,6.08,71.44,214072421,42002,66.43,lower middle income
+Indonesia,2001,5.6,6.4,6.08,69.79,217112437,42783,66.76,lower middle income
+Indonesia,2002,6.0,5.4,6.6,59.08,220115092,43568,67.13,lower middle income
+Indonesia,2003,6.1,6.4,6.66,53.62,223080121,44356,67.41,lower middle income
+Indonesia,2004,6.0,8.4,7.3,59.76,225938595,45149,66.75,lower middle income
+Indonesia,2005,6.2,6.4,7.94,63.99,228805144,45942,67.65,lower middle income
+Indonesia,2006,6.5,3.4,7.55,56.66,231797427,46738,67.91,lower middle income
+Indonesia,2007,6.2,6.4,8.06,54.83,234858289,47535,68.19,lower middle income
+Indonesia,2008,6.0,8.4,7.21,58.56,237936543,48335,68.23,lower middle income
+Indonesia,2009,6.5,6.4,6.11,45.51,240981299,49134,68.49,lower middle income
+Indonesia,2010,6.2,3.4,5.61,46.7,244016173,49914,68.68,lower middle income
+Indonesia,2011,6.3,3.4,5.15,50.18,247099697,50595,68.82,lower middle income
+Indonesia,2012,6.1,3.0,4.47,49.58,250222695,51276,68.97,lower middle income
+Indonesia,2013,5.8,6.4,4.34,48.64,253275918,51955,69.26,lower middle income
+Indonesia,2014,5.6,3.4,4.05,48.08,256229761,52635,69.53,lower middle income
+Indonesia,2015,5.43,3.4,4.51,41.94,259091970,53313,69.7,lower middle income
+Indonesia,2016,5.2,3.4,4.3,37.42,261850182,53989,69.8,lower middle income
+Indonesia,2017,5.1,3.7,3.78,39.36,264498852,54659,69.94,lower middle income
+Indonesia,2018,5.0,3.0,4.39,43.07,267066843,55325,70.34,lower middle income
+Indonesia,2019,5.2,3.4,3.59,37.63,269582878,55985,70.52,lower middle income
+Indonesia,2020,4.3,8.4,4.25,32.98,271857970,56641,69.92,lower middle income
+Myanmar,1990,7.8,17.63,0.76,1.25,40099553,25243,56.66,low income
+Myanmar,1991,7.6,32.27,0.66,1.26,40680533,25418,57.01,low income
+Myanmar,1992,6.7,21.91,0.7,3.57,41237813,25593,57.25,low income
+Myanmar,1993,0.6,31.83,0.69,4.56,41788302,25769,57.63,low income
+Myanmar,1994,4.8,24.1,0.69,4.14,42337109,25946,57.96,low income
+Myanmar,1995,4.4,25.19,0.7,6.22,42880186,26124,58.26,low income
+Myanmar,1996,4.7,16.28,0.71,6.15,43423369,26303,58.94,low income
+Myanmar,1997,5.2,29.7,0.71,7.15,43972046,26482,59.24,low income
+Myanmar,1998,6.3,51.49,0.67,8.12,44516185,26663,59.79,low income
+Myanmar,1999,7.4,18.4,0.65,9.46,45041636,26843,59.88,low income
+Myanmar,2000,5.9,0.11,0.67,10.57,45538332,27025,60.16,low income
+Myanmar,2001,5.5,21.1,0.67,10.16,46014826,27208,60.42,low income
+Myanmar,2002,5.5,57.07,0.66,11.12,46480230,27391,60.73,low income
+Myanmar,2003,5.5,36.59,0.67,12.15,46924293,27575,60.98,low income
+Myanmar,2004,5.5,4.53,0.67,13.47,47338446,27486,61.25,low income
+Myanmar,2005,8.2,9.37,0.68,15.27,47724471,27946,61.6,low income
+Myanmar,2006,7.9,16.45,0.69,14.22,48088274,28132,61.89,low income
+Myanmar,2007,7.5,35.02,0.71,14.47,48445647,28319,62.37,low income
+Myanmar,2008,6.5,26.8,0.71,15.65,48729486,28507,62.59,low income
+Myanmar,2009,5.9,1.47,0.72,16.49,49015836,28695,63.16,low income
+Myanmar,2010,6.8,7.72,0.77,18.8,49390988,28885,63.33,low income
+Myanmar,2011,6.5,5.02,0.75,16.13,49794522,29075,63.9,low income
+Myanmar,2012,6.4,1.47,0.75,11.86,50218185,29266,64.14,low income
+Myanmar,2013,6.2,5.64,0.76,30.98,50648334,29457,64.82,low income
+Myanmar,2014,6.1,4.95,0.77,40.53,51072436,29354,65.06,low income
+Myanmar,2015,6.2,9.45,1.18,44.95,51483949,29858,65.56,low income
+Myanmar,2016,6.3,6.93,1.56,53.92,51892349,30082,65.69,low income
+Myanmar,2017,6.5,4.57,0.87,61.02,52288341,30322,65.84,low income
+Myanmar,2018,6.8,6.87,0.5,62.45,52666014,30579,66.47,low income
+Myanmar,2019,6.4,8.83,1.06,60.69,53040212,30852,66.61,low income
+Myanmar,2020,1.3,5.73,2.17,55.1,53423198,31141,66.8,low income
+Vietnam,1990,5.8,3.4,1.2,81.32,66912613,20257,69.21,low income
+Vietnam,1991,7.2,3.87,1.4,66.95,68358820,20629,69.85,low income
+Vietnam,1992,8.5,3.2,1.89,73.58,69788747,21006,69.96,low income
+Vietnam,1993,8.2,4.8,1.73,66.21,71176405,21387,70.62,low income
+Vietnam,1994,9.5,4.62,1.64,77.47,72501087,21774,70.76,low income
+Vietnam,1995,8.4,5.74,1.89,74.72,73759110,22166,71.38,low income
+Vietnam,1996,8.0,5.67,1.93,92.71,74946448,22563,71.51,low income
+Vietnam,1997,7.3,3.21,2.87,94.34,76058603,22965,71.8,low income
+Vietnam,1998,7.8,7.27,2.29,97.00,77128424,23371,72.11,low income
+Vietnam,1999,4.8,4.12,2.33,102.79,78123713,23817,72.32,low income
+Vietnam,2000,6.2,1.71,2.26,111.42,79001142,24374,72.46,low income
+Vietnam,2001,8.2,0.43,2.76,111.96,79817777,24937,72.65,low income
+Vietnam,2002,7.3,3.83,2.12,116.7,80642308,25511,72.8,low income
+Vietnam,2003,8.4,3.23,2.25,124.33,81475825,26092,72.98,low income
+Vietnam,2004,8.2,7.75,2.14,133.02,82311227,26683,73.14,low income
+Vietnam,2005,8.4,8.28,2.08,130.71,83142095,27281,73.27,low income
+Vietnam,2006,6.8,7.42,2.06,138.31,83951800,27888,73.32,low income
+Vietnam,2007,5.4,8.34,2.03,154.61,84762269,28504,73.44,low income
+Vietnam,2008,6.2,23.12,1.99,154.32,85597241,29128,73.41,low income
+Vietnam,2009,5.4,6.72,1.74,134.71,86482923,29762,73.5,low income
+Vietnam,2010,6.8,9.21,1.11,113.98,87411012,30417,73.51,low income
+Vietnam,2011,8.2,18.68,1.2,125.26,88349117,30145,73.69,low income
+Vietnam,2012,6.0,9.09,1.03,123.22,89301326,31752,73.7,low income
+Vietnam,2013,6.7,6.59,1.32,130.85,90267739,32429,73.78,low income
+Vietnam,2014,6.8,4.08,1.26,135.41,91235504,33115,73.86,low income
+Vietnam,2015,6.8,0.63,1.85,144.91,92191398,33809,73.88,low income
+Vietnam,2016,7.1,2.67,1.85,145.41,93126529,34512,73.94,low income
+Vietnam,2017,6.8,3.52,1.87,160.98,94033048,35213,73.96,low income
+Vietnam,2018,7.1,3.54,1.16,164.66,94914330,35919,73.98,low income
+Vietnam,2019,2.9,2.8,1.68,164.7,95776716,36628,74.09,low income
+Vietnam,2020,2.9,3.22,2.1,163.25,96648685,37984,75.38,low income
+Philippines,1990,0.5,12.18,8.13,42.92,61558898,46986,65.91,lower middle income
+Philippines,1991,3.7,19.26,10.6,44.22,63039751,46901,66.3,lower middle income
+Philippines,1992,2.2,8.65,9.87,44.99,64543525,46815,67.09,lower middle income
+Philippines,1993,3.4,6.72,9.29,50.47,66083321,46732,67.54,lower middle income
+Philippines,1994,2.2,10.39,9.48,52.53,67650283,46645,67.94,lower middle income
+Philippines,1995,5.2,6.83,9.53,57.33,69250468,45561,68.22,lower middle income
+Philippines,1996,5.3,7.48,8.56,63.86,70944969,46475,68.61,lower middle income
+Philippines,1997,3.1,5.59,8.78,77.23,72718837,46395,68.88,lower middle income
+Philippines,1998,5.0,9.23,10.25,80.08,74491918,46305,69.1,lower middle income
+Philippines,1999,5.8,5.94,9.81,77.16,76249064,46225,69.3,lower middle income
+Philippines,2000,4.5,3.98,11.19,85.15,77958223,46135,69.41,lower middle income
+Philippines,2001,4.4,5.35,3.7,84.9,79626086,46054,69.61,lower middle income
+Philippines,2002,4.5,2.72,3.2,83.84,81285572,45965,69.78,lower middle income
+Philippines,2003,4.8,2.29,3.53,87.57,82942837,45881,69.92,lower middle income
+Philippines,2004,4.2,4.83,3.55,87.13,84607501,45795,70.04,lower middle income
+Philippines,2005,4.5,6.52,3.8,83.85,86261250,45716,70.24,lower middle income
+Philippines,2006,5.8,5.49,4.05,80.85,87901835,45625,70.28,lower middle income
+Philippines,2007,7.2,2.9,3.43,73.64,89561377,45547,70.48,lower middle income
+Philippines,2008,4.9,8.26,3.72,67.68,91252326,45455,70.56,lower middle income
+Philippines,2009,3.7,4.22,3.86,60.89,92946951,45371,70.63,lower middle income
+Philippines,2010,6.8,3.79,3.61,66.1,94636700,45332,70.75,lower middle income
+Philippines,2011,3.8,4.72,3.59,60.8,96337913,45522,70.79,lower middle income
+Philippines,2012,7.2,3.03,3.5,57.84,98032317,45712,70.88,lower middle income
+Philippines,2013,6.9,2.58,3.5,55.82,99700107,45903,70.84,lower middle income
+Philippines,2014,6.1,3.6,3.6,57.47,101325201,46093,71.15,lower middle income
+Philippines,2015,7.1,0.67,3.07,59.14,103031365,46284,71.27,lower middle income
+Philippines,2016,6.9,1.25,2.7,61.78,104875266,46475,71.39,lower middle income
+Philippines,2017,6.0,2.85,2.55,68.17,106738501,46682,71.52,lower middle income
+Philippines,2018,6.9,5.31,2.34,72.16,108568836,46907,71.69,lower middle income
+Philippines,2019,6.0,2.39,2.24,68.84,110380804,47149,71.87,lower middle income
+Philippines,2020,11.9,2.39,2.52,58.17,112190977,47408,72.12,lower middle income
+Malaysia,1990,8.5,4.1,4.5,146.89,17517054,49794,71.31,upper middle income
+Malaysia,1991,9.4,2.8,4.9,159.31,18017464,50576,71.44,upper middle income
+Malaysia,1992,8.5,2.2,3.71,150.61,18526708,51814,71.53,upper middle income
+Malaysia,1993,7.5,2.9,4.11,157.94,19050077,53109,71.83,upper middle income
+Malaysia,1994,8.9,3.1,4.02,179.9,19588703,54402,72.16,upper middle income
+Malaysia,1995,9.1,3.2,3.15,192.11,20136888,55688,72.38,upper middle income
+Malaysia,1996,9.7,3.8,2.52,181.77,20689051,56969,72.33,upper middle income
+Malaysia,1997,8.5,2.8,2.45,185.67,21249178,58237,72.28,upper middle income
+Malaysia,1998,8.1,5.8,3.2,209.49,21810542,59496,72.17,upper middle income
+Malaysia,1999,7.0,2.6,3.43,217.57,22368655,60742,72.28,upper middle income
+Malaysia,2000,6.1,1.8,3.5,220.41,22945150,61977,72.78,upper middle income
+Malaysia,2001,4.6,1.7,3.53,203.36,23542517,62922,73.34,upper middle income
+Malaysia,2002,4.2,1.4,3.48,199.36,24142445,63856,73.56,upper middle income
+Malaysia,2003,4.8,1.0,3.61,194.2,24739411,64785,73.8,upper middle income
+Malaysia,2004,5.8,1.4,3.54,210.37,25333247,65694,73.9,upper middle income
+Malaysia,2005,4.9,3.0,3.53,203.85,25923536,66594,74.1,upper middle income
+Malaysia,2006,4.4,3.6,3.18,202.58,26509413,67483,74.16,upper middle income
+Malaysia,2007,4.6,2.0,3.23,192.47,27092604,68369,74.21,upper middle income
+Malaysia,2008,5.8,5.4,3.32,176.67,27664296,69225,74.25,upper middle income
+Malaysia,2009,5.0,0.6,3.66,162.56,28217204,70075,74.23,upper middle income
+Malaysia,2010,4.2,1.7,3.39,157.94,28717731,70912,74.44,upper middle income
+Malaysia,2011,5.6,3.2,3.05,154.94,29184133,71609,74.75,upper middle income
+Malaysia,2012,6.3,1.7,3.1,147.84,29660212,72275,74.94,upper middle income
+Malaysia,2013,5.1,2.1,3.16,142.72,30134807,72934,75.04,upper middle income
+Malaysia,2014,6.0,3.2,2.88,138.31,30606459,73577,75.15,upper middle income
+Malaysia,2015,4.7,2.1,3.1,131.37,31068833,74213,75.09,upper middle income
+Malaysia,2016,6.0,2.1,3.44,126.9,31526418,74854,75.29,upper middle income
+Malaysia,2017,4.2,3.7,3.41,133.16,31975806,75447,75.48,upper middle income
+Malaysia,2018,5.9,1.0,3.3,130.4,32399271,76036,75.64,upper middle income
+Malaysia,2019,4.7,0.7,3.26,123.03,32804020,76607,75.76,upper middle income
+Malaysia,2020,5.6,1.2,4.54,116.83,33199993,77165,75.94,upper middle income
+Thailand,1990,9.3,5.86,2.21,75.78,55228410,29424,70.45,lower middle income
+Thailand,1991,11.3,5.71,2.63,78.47,56099865,29593,70.72,lower middle income
+Thailand,1992,10.3,4.14,1.35,77.95,56939020,29763,70.89,lower middle income
+Thailand,1993,8.3,3.31,1.49,77.75,57776082,29934,71.07,lower middle income
+Thailand,1994,9.4,5.05,1.35,81.25,58610010,30105,71.23,lower middle income
+Thailand,1995,7.1,5.82,1.1,89.76,59424834,30276,70.95,lower middle income
+Thailand,1996,8.7,5.81,1.07,84.27,60211096,30449,71.65,lower middle income
+Thailand,1997,8.0,5.63,0.87,95.05,60989108,30622,72.5,lower middle income
+Thailand,1998,6.8,7.99,3.4,100.24,61745217,30795,72.86,lower middle income
+Thailand,1999,5.3,0.28,2.97,100.71,62442651,30969,72.54,lower middle income
+Thailand,2000,2.3,1.59,2.39,121.3,63066603,31386,72.32,lower middle income
+Thailand,2001,4.2,1.63,2.6,120.27,63649892,32548,72.61,lower middle income
+Thailand,2002,4.2,0.7,1.82,114.97,64222580,33734,72.93,lower middle income
+Thailand,2003,4.9,1.8,1.54,116.69,64776956,34941,73.16,lower middle income
+Thailand,2004,6.7,2.76,1.51,127.41,65311166,36169,73.08,lower middle income
+Thailand,2005,4.9,4.54,1.35,137.85,65821360,37411,73.82,lower middle income
+Thailand,2006,2.3,4.64,1.22,134.09,66319525,38673,74.94,lower middle income
+Thailand,2007,2.3,2.24,1.18,129.87,66826754,39956,75.19,lower middle income
+Thailand,2008,4.5,5.47,1.18,140.44,67328239,41242,75.49,lower middle income
+Thailand,2009,5.0,0.85,1.49,119.27,67813654,42543,75.84,lower middle income
+Thailand,2010,2.9,3.25,0.62,127.25,68270489,43856,76.13,lower middle income
+Thailand,2011,7.1,3.81,0.66,139.68,68712846,44698,76.42,lower middle income
+Thailand,2012,3.3,3.01,0.58,137.67,69157023,45445,76.77,lower middle income
+Thailand,2013,3.0,2.18,0.25,132.46,69578602,46193,77.08,lower middle income
+Thailand,2014,3.9,1.9,0.58,130.91,69960943,46943,77.42,lower middle income
+Thailand,2015,3.3,0.9,0.6,124.84,70294397,47694,77.72,lower middle income
+Thailand,2016,3.2,0.19,0.69,120.58,70607037,48448,78.05,lower middle income
+Thailand,2017,4.1,0.67,0.83,120.89,70898202,49231,78.39,lower middle income
+Thailand,2018,2.4,1.06,0.77,120.84,71127802,49949,78.66,lower middle income
+Thailand,2019,6.1,0.71,0.72,109.67,71307763,50692,78.98,lower middle income
+Thailand,2020,6.1,0.85,1.1,97.82,71475664,51436,79.27,lower middle income
+Brunei,1990,5.5,2.14,4.6,99.08,689457,66438,71.66,upper middle income
+Brunei,1991,1.5,1.60,4.7,106.85,269860,66585,71.87,upper middle income
+Brunei,1992,3.3,1.28,4.86,105.78,277416,67078,72.08,upper middle income
+Brunei,1993,3.5,4.25,4.82,106.53,284713,67604,72.31,upper middle income
+Brunei,1994,3.5,2.46,5.03,99.49,291935,68126,72.55,upper middle income
+Brunei,1995,2.5,5.97,5.18,115.54,299097,68644,72.82,upper middle income
+Brunei,1996,0.9,2.00,5.24,120.57,306196,69158,73.1,upper middle income
+Brunei,1997,1.8,1.71,5.19,115.68,313215,69666,73.36,upper middle income
+Brunei,1998,4.0,0.44,5.33,107.88,320152,70174,73.62,upper middle income
+Brunei,1999,2.2,0.42,5.58,104.22,327045,70669,73.86,upper middle income
+Brunei,2000,3.3,1.56,5.68,103.17,789111,71164,74.08,upper middle income
+Brunei,2001,3.9,0.60,5.79,108.72,340748,71652,74.28,upper middle income
+Brunei,2002,3.6,2.31,5.94,108.75,347463,72046,74.43,upper middle income
+Brunei,2003,0.7,0.30,6.01,105.26,354045,72421,74.56,upper middle income
+Brunei,2004,1.6,0.81,6.02,100.59,360461,72794,74.65,upper middle income
+Brunei,2005,1.8,1.24,6.13,97.46,366717,73163,74.73,upper middle income
+Brunei,2006,2.5,0.16,6.41,96.94,372808,73529,74.78,upper middle income
+Brunei,2007,2.5,0.97,6.33,95.75,378748,73892,74.82,upper middle income
+Brunei,2008,0.6,2.08,6.35,105.91,384568,74252,74.84,upper middle income
+Brunei,2009,2.8,1.04,6.47,108.57,390311,74608,74.85,upper middle income
+Brunei,2010,0.1,0.36,6.77,95.37,865566,74961,74.85,upper middle income
+Brunei,2011,2.8,0.14,6.94,99.54,401506,75310,74.86,upper middle income
+Brunei,2012,2.9,0.11,6.92,105.64,406634,75656,74.83,upper middle income
+Brunei,2013,0.8,0.39,6.88,110.94,411702,75997,74.8,upper middle income
+Brunei,2014,0.4,0.21,6.97,102.42,416656,76332,74.78,upper middle income
+Brunei,2015,2.7,0.49,7.79,89.89,421437,76663,74.75,upper middle income
+Brunei,2016,3.6,0.28,8.38,87.32,425994,76998,74.73,upper middle income
+Brunei,2017,3.9,1.26,9.32,85.18,430276,77312,74.72,upper middle income
+Brunei,2018,3.9,1.03,8.7,93.9,434274,77629,74.71,upper middle income
+Brunei,2019,3.6,0.39,6.92,108.51,438048,77942,74.75,upper middle income
+Brunei,2020,0.3,1.94,7.68,110.29,985641,78251,74.8,upper middle income
+Laos,1990,5.7,42.7,2.83,35.85,4314443,15437,53.71,low income
+Laos,1991,7.0,66.0,2.61,38.18,4437225,15782,54.46,low income
+Laos,1992,7.1,85.7,2.58,44.13,4561106,16133,54.95,low income
+Laos,1993,5.7,29.7,2.59,52.63,4685296,16498,55.44,low income
+Laos,1994,5.3,24.7,2.51,64.81,4807950,16854,55.75,low income
+Laos,1995,5.0,29.4,2.6,60.55,4927432,17378,56.39,low income
+Laos,1996,2.9,21.0,2.48,63.76,5043914,18234,56.89,low income
+Laos,1997,1.7,7.4,2.37,65.16,5150538,19124,57.29,low income
+Laos,1998,2.1,0.4,2.38,84.27,5246922,20039,57.67,low income
+Laos,1999,5.8,0.3,2.1,80.06,5340056,20991,57.87,low income
+Laos,2000,7.0,12.7,2.04,68.84,5430853,21977,58.38,low income
+Laos,2001,6.7,9.8,1.91,65.9,5519707,22993,59.07,low income
+Laos,2002,7.0,6.9,1.78,67.25,5606101,24044,59.53,low income
+Laos,2003,7.5,5.6,1.64,60.57,5689065,25126,60.03,low income
+Laos,2004,7.5,6.3,1.5,66.08,5768167,26242,60.29,low income
+Laos,2005,6.4,7.6,1.35,71.79,5852970,27186,60.98,low income
+Laos,2006,5.4,5.4,1.19,81.96,5946593,27748,61.49,low income
+Laos,2007,6.9,4.4,1.09,79.21,6041348,28316,62.08,low income
+Laos,2008,7.5,9.5,0.96,81.85,6135861,28893,62.6,low income
+Laos,2009,6.5,0.3,0.85,76.93,6229930,29475,63.27,low income
+Laos,2010,8.0,6.5,0.71,84.72,6323418,30064,63.97,low income
+Laos,2011,7.5,9.6,1.07,91.7,6416327,30654,64.74,low income
+Laos,2012,7.0,5.2,1.42,98.19,6508803,31264,65.36,low income
+Laos,2013,6.8,5.5,1.77,98.18,6600742,31872,65.72,low income
+Laos,2014,6.9,4.9,2.15,99.06,6691454,32487,66.36,low income
+Laos,2015,6.8,1.3,2.52,85.8,6787419,33108,66.67,low income
+Laos,2016,6.6,1.5,2.9,75.09,6891363,33736,67.17,low income
+Laos,2017,6.8,0.7,3.27,69.55,6997917,34368,67.43,low income
+Laos,2018,4.9,2.1,3.27,78.63,7105006,35004,67.63,low income
+Laos,2019,6.8,3.1,3.27,56.57,7212053,35645,68.14,low income
+Laos,2020,4.0,1.4,3.58,46.46,7319399,36456,68.5,low income
+Singapore,1990,10.3,3.46,2.18,344.33,3047132,3047,75.3,high income
+Singapore,1991,9.9,3.43,3.09,323.89,3135083,3101,75.65,high income
+Singapore,1992,8.8,2.26,3.07,311.31,3230698,3227,75.95,high income
+Singapore,1993,10.3,2.29,3.03,313.42,3313471,3297,76.05,high income
+Singapore,1994,9.5,3.1,3.3,316.22,3419048,3370,76.2,high income
+Singapore,1995,9.6,1.72,3.57,345.46,3524506,3446,76.3,high income
+Singapore,1996,10.0,1.38,2.5,334.91,3670704,3527,76.6,high income
+Singapore,1997,8.8,2.1,3.41,323.86,3796038,3609,76.9,high income
+Singapore,1998,6.5,0.27,4.85,312.08,3927213,3692,77.3,high income
+Singapore,1999,10.1,0.02,3.7,336.48,3958723,3774,77.55,high income
+Singapore,2000,9.9,1.36,3.76,364.36,4027887,3858,77.95,high income
+Singapore,2001,5.4,1.4,5.65,349.29,4138012,3943,78.25,high income
+Singapore,2002,8.4,0.39,5.93,349.75,4175950,4028,78.55,high income
+Singapore,2003,8.2,0.51,5.84,377.22,4114826,4115,79.04,high income
+Singapore,2004,4.4,1.66,5.59,401.52,4166664,4202,79.49,high income
+Singapore,2005,9.9,0.43,4.48,420.43,4265762,4290,79.99,high income
+Singapore,2006,4.9,0.96,3.9,425.36,4401365,4379,80.14,high income
+Singapore,2007,9.9,2.1,3.96,394.29,4588599,4470,80.44,high income
+Singapore,2008,8.8,6.63,5.86,437.33,4839396,4562,80.79,high income
+Singapore,2009,1.3,0.6,4.12,358.19,4987573,4657,81.24,high income
+Singapore,2010,3.9,2.82,3.89,369.69,5076732,4751,81.54,high income
+Singapore,2011,4.9,5.25,3.72,379.1,5183688,4843,81.74,high income
+Singapore,2012,3.6,4.58,3.86,369.21,5312437,4935,82.05,high income
+Singapore,2013,2.4,2.36,3.74,367.04,5399162,5024,82.25,high income
+Singapore,2014,3.0,1.03,3.79,360.47,5469724,5110,82.5,high income
+Singapore,2015,2.2,0.52,4.08,329.47,5535002,5194,82.74,high income
+Singapore,2016,3.9,0.53,4.2,303.33,5607283,5269,82.85,high income
+Singapore,2017,2.2,0.58,3.64,316.39,5612253,5346,83.1,high income
+Singapore,2018,3.1,0.44,3.1,324.32,5638676,5350,83.3,high income
+Singapore,2019,5.4,0.57,4.1,321.81,5703569,5430,83.6,high income
+Singapore,2020,5.8,0.18,3.62,331.73,5685807,5623,83.74,high income
