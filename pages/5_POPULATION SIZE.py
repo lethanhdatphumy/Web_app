@@ -7,7 +7,7 @@ df = pd.read_csv("GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
 year = st.sidebar.slider('Select a Year Range', 1990, 2020, (1990, 2020))
-
+df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
 filtered_data = df[(df['Year'] >= year[0]) & (df['Year'] <= year[1])]
 
 grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size_million_people'].sum().unstack()
