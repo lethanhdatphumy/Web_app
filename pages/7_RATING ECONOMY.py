@@ -17,6 +17,9 @@ selected_countries = st.sidebar.multiselect('Country', default_countries, defaul
 selected_data = df[df['Country'].isin(selected_countries)]
 rating_counts = selected_data.groupby(['Rating_economy', 'Country']).size().unstack(fill_value=0)
 
+# Fill NaN values with zeros
+rating_counts.fillna(0, inplace=True)
+
 fig, ax = plt.subplots(figsize=(20, 5))
 sns.barplot(data=rating_counts, x=rating_counts.index, y=rating_counts.columns, stacked=True, ax=ax)
 
