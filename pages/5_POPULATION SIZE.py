@@ -11,6 +11,7 @@ years = st.sidebar.selectbox('Select a Year', list(range(min_year, max_year + 1)
 
 filtered_data = data[(data['Year'] >= years[0]) & (data['Year'] <= years[1])]
 
+
 grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size'].sum().unstack()
 
 colors = ["#E60000", "#ff82ab", "#7fffd4", "#ffb90f", "#ff6eb4",
