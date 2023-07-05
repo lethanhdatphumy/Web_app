@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('GOD'sDATA.csv')
+df = pd.read_csv(r"GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
 rating_counts = df.groupby('Rating_economy').size().reset_index(name='count')
