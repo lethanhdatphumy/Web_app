@@ -30,7 +30,7 @@ plt.figure(figsize=(20,5))
 Rating_counts.plot(kind='bar', stacked=True)
 
 plt.title(f"RATING ECONOMY OF SOUTHEAST ASIAN COUNTRIES - {rating_selection.upper()} \nData source: World Bank", fontweight='bold', loc='center',color='#FF4500',fontsize=18)
-
+plt.xlabel("", fontweight="bold", fontsize=14, color= "#00AA00")
 plt.ylabel("Count", fontweight='bold',fontsize=14, color='#00AA00')
 plt.tick_params(axis='x', labelsize=12)
 plt.tick_params(axis='y', labelsize=12)
