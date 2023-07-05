@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 data = pd.read_csv("GOD'sDATA.csv")
-data.columns= data.columns.str.strip()
+data.columns = data.columns.str.strip()
 min_year = int(data['Year'].min())
 max_year = int(data['Year'].max())
 
-years = st.sidebar.selectbox('Select a Year ', min_year, max_year, (1990, 2020))
+years = st.sidebar.selectbox('Select a Year', list(range(min_year, max_year + 1)), (1990, 2020))
 
 filtered_data = data[(data['Year'] >= years[0]) & (data['Year'] <= years[1])]
 
@@ -21,7 +21,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 plt.figure(figsize=(12, 8))
 grouped_data.plot(kind='bar', grid=True, color=colors, width=0.8)
 
-plt.title("Total population in Southeast Asia countries\nData Source: World Bank", 
+plt.title("Total population in Southeast Asia countries\nData Source: World Bank",
           fontweight='bold', color='#FF5733', fontsize=22)
 plt.xlabel("Year", fontsize=16, color='#00AA00', fontweight='bold')
 plt.ylabel("Population (Million People)", fontsize=16, color='#00AA00', fontweight='bold')
@@ -30,4 +30,6 @@ plt.yticks(fontsize=12)
 plt.legend(loc='upper right')
 
 plt.gca().get_yaxis().get_offset_text().set_visible(False)
-st.pyplot()
+
+# Instead of using `st.pyplot()`, use `st.pyplot(plt.gcf())` to display the plot
+st.pyplot(plt.gcf())
