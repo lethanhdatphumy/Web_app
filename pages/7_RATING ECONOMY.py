@@ -12,7 +12,7 @@ df['Rating_economy'] = pd.Categorical(df['Rating_economy'], categories=order, or
 st.sidebar.header('User Input Parameters')
 
 default_countries = df['Country'].unique().tolist()
-selected_countries = st.sidebar.selecbox('Country', default_countries, default=default_countries)
+selected_countries = st.sidebar.selectbox('Country', default_countries, default=default_countries)
 
 selected_data = df[df['Country'].isin(selected_countries)]
 rating_counts = selected_data.groupby(['Rating_economy', 'Country']).size().unstack(fill_value=0)
