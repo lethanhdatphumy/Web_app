@@ -1,10 +1,15 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import seaborn as sns
+import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
-df = pd.read_csv("GOD'sDATA.csv")
+url = "https://raw.githubusercontent.com/lethanhdatphumy/Data-Analysis-/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv"
+
+df = pd.read_csv(url)
 df.columns = df.columns.str.strip()
+
 
 st.set_page_config(
     page_title="Data Visualization",
@@ -12,6 +17,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
 
 fig1 = px.box(df, 
               x='Country', 
@@ -22,53 +28,38 @@ fig1 = px.box(df,
               template='plotly_white'
 )
 
+fig1.update_traces(boxpoints=False)  
 fig1.update_layout(
     font_family="Courier New",
     font_color="darkblue",
     title_font_family="Times New Roman",
     title_font_color="red"
 )
+colors = ['#EE2C2C', '#00F5FF', '#CD853F', '#00CD00']
 
-# Create density plot for GDP growth rate by rating economy
-fig2 = go.Figure()
-colors = ['blue', 'orange', 'green', 'red']
-
-for rating, color in zip(df['Rating_economy'].unique(), colors):
-    subset = df[df['Rating_economy'] == rating]
-    fig2.add_trace(go.Histogram(x=subset['GDP_growth'], 
-                                nbinsx=30, 
-                                histnorm='probability density',  # set to create a density plot
-                                opacity=0.7, 
-                                marker_color=color, 
-                                name=f'Rating economy: {rating}'))
-
-fig2.update_layout(
-    barmode='overlay',
-    title_text='Density Plot of GDP growth rate by rating economy',
-    xaxis_title_text='GDP Growth (%)', 
-    yaxis_title_text='Density',  # update axis label to reflect the change to a density plot
-    template='plotly_white', 
-    font=dict(
-        family="Courier New",  
-        size=14,
-        color="darkblue"
-    ),
-    title_font=dict(
-        family="Times New Roman", 
-        size=18, 
-        color="red"
-    )
-)
-fig2.update_traces(marker_line_color='black', marker_line_width=1.2, showlegend=False)
+st.write(fig1)
+ratings = df['Rating_economy'].unique()
 
 
-st.title("Welcome to Data Visualization")
-st.header("Data Visualization")
-
-# Display the box plot
-st.plotly_chart(fig1)
-
-st.markdown("---")
+selected_rating = st.sidebar.selectbox('Select a Rating Economy', ratings)
 
 
-st.plotly_chart(fig2)
+subset = df[df['Rating_economy'] == selected_rating]
+
+plt.figure(figsize=(10, 6))
+
+# Plotting
+sns.kdeplot(subset['GDP_growth'], fill=True, color=colors[ratings.tolist().index(selected_rating)], alpha=0.4, linewidth=1.4,
+            label=f'Rating economy: {selected_rating}')
+
+plt.title('Distribution of GDP growth rate according to rating economy\nData Source: World Bank',
+          fontweight='bold', color='#FF5733', fontsize=22)
+plt.xlabel('GDP Growth (%)', fontsize=16, color='#00AA00', fontweight='bold')
+plt.ylabel('Density', fontsize=16, color='#00AA00', fontweight='bold')
+plt.legend(title='Rating economy')
+plt.minorticks_on()
+plt.grid(True, which='both', linestyle='--', alpha=0.8)
+plt.tight_layout()
+
+
+st.pyplot(plt)
