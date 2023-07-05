@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-data = pd.read_csv("C:\\Users\\Dung\\Desktop\\DataPy.csv")
+data = pd.read_csv("GOD'sDATA.csv")
 
 min_year = int(data['Year'].min())
 max_year = int(data['Year'].max())
