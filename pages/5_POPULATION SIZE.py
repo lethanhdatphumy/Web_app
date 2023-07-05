@@ -1,42 +1,34 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
-import seaborn as sns
 
-try:
-    df = pd.read_csv("GOD'sDATA.csv")
-except FileNotFoundError:
-    st.error("File not found, please check the path and file name.")
+data = pd.read_csv("C:\\Users\\Dung\\Desktop\\DataPy.csv")
 
-df.columns = df.columns.str.strip()
+min_year = int(data['Year'].min())
+max_year = int(data['Year'].max())
 
-df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
+years = st.sidebar.slider('Select a Year Range', min_year, max_year, (1990, 2020))
 
-df = df[df['Year'].notna()]
+filtered_data = data[(data['Year'] >= years[0]) & (data['Year'] <= years[1])]
 
-year = st.sidebar.slider('Select a Year Range', int(df['Year'].min()), int(df['Year'].max()), (1990, 2020))
+grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size'].sum().unstack()
 
-filtered_data = df[(df['Year'] >= year[0]) & (df['Year'] <= year[1])]
+colors = ["#E60000", "#ff82ab", "#7fffd4", "#ffb90f", "#ff6eb4",
+          "#ff3030", "#fa8072", "#FF7F24", "#00ff7f", "#0066cc"]
 
-grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size'].sum().reset_index()
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
-sns.set_style("whitegrid")
+plt.figure(figsize=(12, 8))
+grouped_data.plot(kind='bar', grid=True, color=colors, width=0.8)
 
-fig, ax = plt.subplots(figsize=(12, 8))
-
-
-for country in grouped_data['Country'].unique():
-    country_data = grouped_data[grouped_data['Country'] == country]
-    sns.histplot(data=country_data, x='Year', y='Population_size', label=country, kde=True)
-
-ax.set_title("Population distribution in Southeast Asian countries from 1990 to 2020", fontweight='bold', color='#333333', fontsize=22)
-ax.set_xlabel("Year", fontsize=16, color='#333333', fontweight='bold')
-ax.set_ylabel("Population (Million People)", fontsize=16, color='#333333', fontweight='bold')
-
-plt.xticks(fontsize=12, rotation=45)
+plt.title("Total population in Southeast Asia countries\nData Source: World Bank", 
+          fontweight='bold', color='#FF5733', fontsize=22)
+plt.xlabel("Year", fontsize=16, color='#00AA00', fontweight='bold')
+plt.ylabel("Population (Million People)", fontsize=16, color='#00AA00', fontweight='bold')
+plt.xticks(fontsize=12, rotation=0)
 plt.yticks(fontsize=12)
-ax.get_yaxis().get_major_formatter().set_scientific(False)
+plt.legend(loc='upper right')
 
-ax.legend(title='Country', title_fontsize='13', fontsize='11')
+plt.gca().get_yaxis().get_offset_text().set_visible(False)
+st.pyplot()
 
-st.pyplot(fig)
