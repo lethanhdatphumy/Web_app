@@ -4,8 +4,10 @@ from PIL import Image
 from pandas import options
 
 st.set_page_config(
-    page_title="",
-    page_icon=":wave:",
+    page_title="Our Data",
+    
+    layout="wide",
+    
 )
 
 page_bg_img = '''
