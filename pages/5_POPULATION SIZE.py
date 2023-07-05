@@ -3,10 +3,21 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import seaborn as sns
 
-df = pd.read_csv("GOD'sDATA.csv")
+
+try:
+    df = pd.read_csv("GOD'sDATA.csv")
+except FileNotFoundError:
+    st.error("File not found, please check the path and file name.")
+
 df.columns = df.columns.str.strip()
 
-year = st.sidebar.slider('Select a Year Range', 1990, 2020, (1990, 2020))
+
+df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
+
+
+df = df[df['Year'].notna()]
+
+year = st.sidebar.slider('Select a Year Range', int(df['Year'].min()), int(df['Year'].max()), (1990, 2020))
 
 filtered_data = df[(df['Year'] >= year[0]) & (df['Year'] <= year[1])]
 
