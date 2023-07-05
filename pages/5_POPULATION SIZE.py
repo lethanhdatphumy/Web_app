@@ -7,7 +7,7 @@ data.columns = data.columns.str.strip()
 min_year = int(data['Year'].min())
 max_year = int(data['Year'].max())
 
-years = st.sidebar.selectbox('Select a Year', list(range(min_year, max_year + 1)), index=(1990, 2020))
+years = st.sidebar.selectbox('Select a Year', list(range(min_year, max_year + 1)), index=30)
 
 filtered_data = data[(data['Year'] >= years[0]) & (data['Year'] <= years[1])]
 
@@ -31,5 +31,5 @@ plt.legend(loc='upper right')
 
 plt.gca().get_yaxis().get_offset_text().set_visible(False)
 
-# Instead of using `st.pyplot()`, use `st.pyplot(plt.gcf())` to display the plot
+
 st.pyplot(plt.gcf())
