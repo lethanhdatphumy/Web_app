@@ -14,6 +14,6 @@ st.set_page_config(
 st.title("Analysis of selected Socio - Economic Issues in ASEAN")
 st.header("Using Python, CSS and HTML for ploting")
 
-image = Image.open('E:\code\GOD\ASEAN Welcome page.jpg')
+image = Image.open('ASEAN Welcome page.jpg')
 
 st.image(image, caption='Sunrise by the mountains')
