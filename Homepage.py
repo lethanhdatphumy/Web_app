@@ -47,7 +47,7 @@ st.title("Analysis of selected Socio- Economy Issues in in Southeast Asia countr
 st.header("Using Python 3 for ploting")
 st.write(data)
 
-
+data["Year"] = data["Year"].astype(int)
 
 
 st.sidebar.markdown("## Sidebar")
