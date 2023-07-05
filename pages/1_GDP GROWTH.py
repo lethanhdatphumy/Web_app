@@ -3,8 +3,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-
-
 df = pd.read_csv("GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
@@ -14,7 +12,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
 
 fig1 = px.box(df, 
               x='Country', 
@@ -32,7 +29,7 @@ fig1.update_layout(
     title_font_color="red"
 )
 
-# Create histogram for GDP growth rate by rating economy
+# Create density plot for GDP growth rate by rating economy
 fig2 = go.Figure()
 colors = ['blue', 'orange', 'green', 'red']
 
@@ -40,15 +37,16 @@ for rating, color in zip(df['Rating_economy'].unique(), colors):
     subset = df[df['Rating_economy'] == rating]
     fig2.add_trace(go.Histogram(x=subset['GDP_growth'], 
                                 nbinsx=30, 
+                                histnorm='probability density',  # set to create a density plot
                                 opacity=0.7, 
                                 marker_color=color, 
                                 name=f'Rating economy: {rating}'))
 
 fig2.update_layout(
     barmode='overlay',
-    title_text='Histogram of GDP growth rate by rating economy',
+    title_text='Density Plot of GDP growth rate by rating economy',
     xaxis_title_text='GDP Growth (%)', 
-    yaxis_title_text='Frequency', 
+    yaxis_title_text='Density',  # update axis label to reflect the change to a density plot
     template='plotly_white', 
     font=dict(
         family="Courier New",  
@@ -63,7 +61,7 @@ fig2.update_layout(
 )
 fig2.update_traces(marker_line_color='black', marker_line_width=1.2, showlegend=False)
 
-# Set page title and header
+
 st.title("Welcome to Data Visualization")
 st.header("Data Visualization")
 
@@ -72,5 +70,5 @@ st.plotly_chart(fig1)
 
 st.markdown("---")
 
-# Display the histogram
+
 st.plotly_chart(fig2)
