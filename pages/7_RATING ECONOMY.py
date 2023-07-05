@@ -6,7 +6,7 @@ import seaborn as sns
 
 # Read the data
 df = pd.read_csv(r"GOD'sDATA.csv")
-
+df.columns=df.columns.str.strip()
 # Create a sidebar for user inputs
 st.sidebar.header('User Input Parameters')
 rating_selection = st.sidebar.selectbox('Choose Rating Economy Category', ['low income', 'lower middle income', 'upper middle income', 'high income'])
