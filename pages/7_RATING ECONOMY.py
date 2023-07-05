@@ -33,4 +33,10 @@ ax.set_xticklabels(ax.get_xticklabels(), rotation=15)
 
 ax.legend(title='Country', loc='best', bbox_to_anchor=(0.5, -0.4), ncol=5)
 plt.tight_layout()
+
+# Streamlit code
+st.title("Rating Economy of Southeast Asian Countries")
 st.pyplot(fig)
+
+st.header("Selected Data")
+st.dataframe(selected_data)
