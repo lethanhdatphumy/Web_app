@@ -4,18 +4,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Read the data
-# Here, you should include a way for users to upload their own file
-uploaded_file = st.file_uploader("Choose a file")
-if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
-else:
-    st.write("Please upload a file.")
+df=pd.read_csv("GOD'sDATA")
+df.columns= df.columns.str.strip()
 
-# Continue only if a file was uploaded
 if uploaded_file is not None:
 
-    # This line will make sure that the app doesn't rerun from the top every time the user interacts with a widget
+
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
     rating_counts = df.groupby('Rating_economy').size().reset_index(name='count')
