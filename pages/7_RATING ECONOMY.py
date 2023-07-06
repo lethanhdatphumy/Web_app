@@ -4,6 +4,31 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+
+page_bg_img = '''
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+[data-testid="stAppViewContainer"]  {
+background-image: url("https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80");
+background-size:cover;
+background-repeat: no-repeat;
+}
+[data-testid="stHeader"]{
+background-color : rgba(0,0,0,0)
+    
+}
+[data-testid="stSidebar"]{
+background-image: url("https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80");
+background-size:cover;
+background-repeat: no-repeat;
+}
+
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # Read the data
 df = pd.read_csv(r"GOD'sDATA.csv")
 df.columns=df.columns.str.strip()

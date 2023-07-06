@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 url = "https://raw.githubusercontent.com/lethanhdatphumy/Data-Analysis-/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv"
 
-df = pd.read_csv(url)
+df = pd.read_csv("GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
 
@@ -17,7 +17,28 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+page_bg_img = '''
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+[data-testid="stAppViewContainer"]  {
+background-image: url("https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80");
+background-size:cover;
+background-repeat: no-repeat;
+}
+[data-testid="stHeader"]{
+background-color : rgba(0,0,0,0)
+    
+}
+[data-testid="stSidebar"]{
+background-image: url("https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80");
+background-size:cover;
+background-repeat: no-repeat;
+}
 
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 fig1 = px.box(df, 
               x='Country', 
@@ -30,9 +51,9 @@ fig1 = px.box(df,
 
 fig1.update_traces(boxpoints=False)  
 fig1.update_layout(
-    font_family="Courier New",
+    font_family="Roboto",
     font_color="darkblue",
-    title_font_family="Times New Roman",
+    title_font_family="Roboto",
     title_font_color="red"
 )
 colors = ['#EE2C2C', '#00F5FF', '#CD853F', '#00CD00']
