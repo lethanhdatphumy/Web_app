@@ -1,32 +1,47 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
-import seaborn as sns
 
-df = pd.read_csv("GOD'sDATA.csv")
-df.columns = df.columns.str.strip()
+# Load data
+data = pd.read_csv("GOD'sDATA.csv")
+data.columns = data.columns.str.strip()
 
-year = st.sidebar.slider('Select a Year Range', 1990, 2020, (1990, 2020))
+# Get min and max years in the data
+min_year = int(data['Year'].min())
+max_year = int(data['Year'].max())
 
-filtered_data = df[(df['Year'] >= year[0]) & (df['Year'] <= year[1])]
+# Add a sidebar selectbox to select a year
+year = st.sidebar.selectbox('Select a Year', list(range(min_year, max_year + 1)), index=30)
 
-grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size_million_people'].sum().unstack()
+# Filter the data for the selected year
+filtered_data = data[data['Year'] == year]
 
-sns.set_style("whitegrid")
-palette = sns.color_palette("husl", len(grouped_data.columns))
+# Group the filtered data by Year and Country, summing the Population_size
+grouped_data = filtered_data.groupby(['Year', 'Country'])['Population_size'].sum().unstack()
 
-fig, ax = plt.subplots(figsize=(12, 8))
+# Colors for the bar chart
+colors = ["#E60000", "#ff82ab", "#7fffd4", "#ffb90f", "#ff6eb4",
+          "#ff3030", "#fa8072", "#FF7F24", "#00ff7f", "#0066cc"]
 
-grouped_data.plot(kind='bar', stacked=True, ax=ax, color=palette, grid=False, edgecolor='black')
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
-ax.set_title("Total population in Southeast Asian countries from 1990 to 2020", fontweight='bold', color='#333333', fontsize=22)
-ax.set_xlabel("Year", fontsize=16, color='#333333', fontweight='bold')
-ax.set_ylabel("Population (Million People)", fontsize=16, color='#333333', fontweight='bold')
+# Set figure size
+plt.figure(figsize=(12, 8))
 
-plt.xticks(fontsize=12, rotation=45)
+# Create bar chart
+grouped_data.plot(kind='bar', grid=True, color=colors, width=0.8)
+
+# Set chart title, labels, ticks, and legend
+plt.title("Total population in Southeast Asia countries\nData Source: World Bank", 
+          fontweight='bold', color='#FF5733', fontsize=22)
+plt.xlabel("Year", fontsize=16, color='#00AA00', fontweight='bold')
+plt.ylabel("Population (Million People)", fontsize=16, color='#00AA00', fontweight='bold')
+plt.xticks(fontsize=12, rotation=0)
 plt.yticks(fontsize=12)
-ax.get_yaxis().get_major_formatter().set_scientific(False)
+plt.legend(loc='upper right')
 
-ax.legend(title='Country', title_fontsize='13', fontsize='11')
+# Hide the offset on the y-axis
+plt.gca().get_yaxis().get_offset_text().set_visible(False)
 
-st.pyplot(fig)
+# Show the plot in the Streamlit app
+st.pyplot(plt.gcf())

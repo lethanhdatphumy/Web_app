@@ -34,7 +34,7 @@ for i, country in enumerate(selected_countries):
     plt.plot(country_data['Year'], country_data['Life_expectancy'], label=country, color=colors[i % len(colors)], linestyle=linetype, linewidth=linewidth)
 
 
-plt.legend(title="Country", fontsize=12, title_fontsize=12, loc="lower center", bbox_to_anchor=(0.5,-0.25), ncol=3)
+plt.legend(title="Country", fontsize=12, title_fontsize=12, loc="best", bbox_to_anchor=(0.5,-0.25), ncol=3)
 plt.grid()
 plt.tight_layout()
 
