@@ -31,7 +31,7 @@ border-radius:50%;
 }
 </style>
 '''
-sidebar_image=Image.open(r"tuan.jpg")
+
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 data = pd.read_csv("GOD'sDATA.csv")
