@@ -34,7 +34,7 @@ border-radius:50%;
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-data = pd.read_csv("GOD'sDATA.csv")
+data = pd.read_csv(r"GOD'sDATA.csv")
 
 
 st.title("Welcome to My" )
