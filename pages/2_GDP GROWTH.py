@@ -44,10 +44,12 @@ fig1 = px.box(df,
               x='Country', 
               y='GDP_growth', 
               color='Country',
-              labels={"Country": "Country", "GDP_growth": "GDP Growth (%)"},
-              title="GDP Growth by Country",
-              template='plotly_white'
-)
+              template='plotly_white')
+plt.xlabel('GDP Growth (%)', fontweight='bold', fontsize=14, color='#222831')
+plt.ylabel('Country', fontweight='bold', fontsize=14, color='#222831')
+plt.title(' GDP Growth by Country', fontweight='bold', loc='center', color='#FF4500', fontsize=18)
+plt.tick_params(axis='both', labelsize=12, colors='#393e46')
+
 
 fig1.update_traces(boxpoints=False)  
 fig1.update_layout(
