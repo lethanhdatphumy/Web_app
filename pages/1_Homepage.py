@@ -42,7 +42,7 @@ st.header("Data Overview")
 
 st.write(data)
 
-st.sidebar.image(sidebar_image,use_column_width=True)
+
 
 
 
