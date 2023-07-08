@@ -33,7 +33,7 @@ page_bg_img = '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 data = pd.read_csv("GOD'sDATA.csv")
-data.columns = data.columns.str.strip()
+
 data["Year"] = data["Year"].astype(str)
 
 st.title("Welcome to data visualization")
