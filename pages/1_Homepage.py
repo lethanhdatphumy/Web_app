@@ -12,9 +12,7 @@ page_bg_img = '''
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 [data-testid="stAppViewContainer"]  {
-background-image: url("https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80");
-background-size:cover;
-background-repeat: no-repeat;
+background-color: rgb(6,71,17);
 }
 [data-testid="stHeader"]{
     background-color : rgba(0,0,0,0)
