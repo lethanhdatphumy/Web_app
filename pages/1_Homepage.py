@@ -44,11 +44,11 @@ data.columns = data.columns.str.strip()
 data["Year"] = data["Year"].astype(str)
 
 
-st.title("Analysis of selected Socio- Economy Issues in in Southeast Asia countries")
-st.header("Using Python 3 for ploting")
+st.title("Welcome to data visualization")
+st.header("Our data: ")
 st.write(data)
 
-data["Year"] = data["Year"].astype(int)
+
 
 
 st.sidebar.markdown("## Sidebar")
