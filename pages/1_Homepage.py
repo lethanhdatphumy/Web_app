@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-from PIL import Image
-
 
 st.set_page_config(
     page_title="",
@@ -34,15 +32,9 @@ border-radius:50%;
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-data = pd.read_csv(r"GOD'sDATA.csv")
+data = pd.read_csv("GOD'sDATA.csv")
 
-
-st.title("Welcome to My" )
+st.title("Welcome to My")
 st.header("Data Overview")
 
 st.write(data)
-
-
-
-
-
