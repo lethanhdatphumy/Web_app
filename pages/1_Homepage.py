@@ -1,4 +1,4 @@
-@@ -1,54 +0,0 @@
+
 import streamlit as st
 import pandas as pd
 from PIL import Image
