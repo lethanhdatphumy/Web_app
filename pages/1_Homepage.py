@@ -48,7 +48,7 @@ st.title("Welcome to data visualization")
 st.header("Our data: ")
 st.write(data)
 
-
+data["Year"] = data["Year"].astype(int)
 
 
 st.sidebar.markdown("## Sidebar")
