@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 from PIL import Image
@@ -47,8 +46,12 @@ data["Year"] = data["Year"].astype(str)
 st.title("Welcome to data visualization")
 st.header("Our data: ")
 st.write(data)
-data["Year"] = data["Year"].astype(int)
 
+
+with open("GOD'sDATA.csv", "rb") as f:
+    image = Image.open(f)
+
+st.image(image, caption="Our data")
 
 st.sidebar.markdown("## Sidebar")
 st.sidebar.info("Select pages above <3")
