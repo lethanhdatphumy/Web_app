@@ -1,26 +1,25 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
-from pandas import options
+
 
 st.set_page_config(
     page_title="",
     page_icon=":wave:",
 )
-
 page_bg_img = '''
 <style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
 [data-testid="stAppViewContainer"]  {
-background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
-background-size:cover;
-background-repeat: no-repeat;
+background-color: rgb(6,71,17);
 }
 [data-testid="stHeader"]{
     background-color : rgba(0,0,0,0)
     
 }
 [data-testid="stSidebar"]{
-background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
+background-image: url("https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80");
 background-size:cover;
 background-repeat: no-repeat;
 }
@@ -28,30 +27,18 @@ background-repeat: no-repeat;
 border-radius:50%;
 
 }
-[data-testid="stImage"]{
-}
 </style>
 '''
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+data = pd.read_csv("GOD'sDATA.csv")
 
 
-url= "https://github.com/lethanhdatphumy/Data-Analysis-/blob/ef854d147328f710a33112644b26eee591e0e29f/GOD'sDATA.csv"
-data = pd.read_csv(url)
-data.columns = data.columns.str.strip()
-data["Year"] = data["Year"].astype(str)
+st.title("Welcome to My" )
+st.header("Data Overview")
 
-
-st.title("Welcome to data visualization")
-st.header("Our data: ")
 st.write(data)
 
 
-with open("GOD'sDATA.csv", "rb") as f:
-    image = Image.open(f)
 
-st.image(image, caption="Our data")
 
-st.sidebar.markdown("## Sidebar")
-st.sidebar.info("Select pages above <3")
