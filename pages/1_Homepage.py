@@ -37,8 +37,8 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
-
-data = pd.read_csv("GOD'sDATA.csv")
+url= "https://github.com/lethanhdatphumy/Data-Analysis-/blob/ef854d147328f710a33112644b26eee591e0e29f/GOD'sDATA.csv"
+data = pd.read_csv(url)
 data.columns = data.columns.str.strip()
 data["Year"] = data["Year"].astype(str)
 
