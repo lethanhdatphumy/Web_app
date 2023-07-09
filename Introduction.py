@@ -21,13 +21,18 @@ background-repeat: no-repeat;
 [data-testid="stHeader"]{
 background-color : rgba(0,0,0,0)
     
-}
 [data-testid="stSidebar"]{
-background-image: url("https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80");
+background-image: url("https://images.unsplash.com/photo-1486520299386-6d106b22014b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80");
 background-size:cover;
 background-repeat: no-repeat;
 }
+[data-testid="stImage"] > img{
+border-radius:50%;
+width:150px;
 
+}
+[data-testid="stImage"]{
+}
 </style>
 '''
 st.title("Analysis of selected Socio - Economic Issues in ASEAN")
