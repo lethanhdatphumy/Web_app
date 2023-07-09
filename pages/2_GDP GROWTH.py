@@ -43,14 +43,12 @@ fig1 = px.box(df,
               y='GDP_growth', 
               color='Country',
               template='plotly_white')
-fig1.update_layout(
-    title="",  # Set an empty string as the title
-    font_family="Roboto",
-    font_color="darkblue",
-    title_font_family="Roboto",
-    title_font_color="red"
-)
-fig1.update_traces(boxpoints=False)  
+
+plt.title('GDP growth rate by Country \nData Source: World Bank',
+          fontweight='bold', color='#FF5733', fontsize=22)
+plt.xlabel('Country', fontsize=16, color='#00AA00', fontweight='bold')
+plt.ylabel('GDP growth (%)', fontsize=16, color='#00AA00', fontweight='bold')
+fig1.update_traces(boxpoints=False) 
 
 st.write(fig1)
 
