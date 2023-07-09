@@ -10,8 +10,7 @@ st.set_page_config(
 
 
 data = pd.read_csv("GOD'sDATA.csv")
-
-
+data.columns= data.columns.str.strip()
 st.title("Welcome to My" )
 st.header("Data Overview")
 data["Year"] = data["Year"].astype(str)
