@@ -32,7 +32,7 @@ width:150px;
 }
 </style>
 '''
-sidebar_image=Image.open(r"C:\Users\HP\Downloads\lmao3.jpg")
+
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 data = pd.read_csv("GOD'sDATA.csv")
