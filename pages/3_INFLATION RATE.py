@@ -1,22 +1,20 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-import seaborn as sns
 import matplotlib.pyplot as plt
-import plotly.graph_objects as go
+import numpy as np
 
-url = "https://raw.githubusercontent.com/lethanhdatphumy/Data-Analysis-/ed49225f84d63a1424220cb95f01dea4448166d2/GOD'sDATA.csv"
 
 df = pd.read_csv("GOD'sDATA.csv")
 df.columns = df.columns.str.strip()
 
-
 st.set_page_config(
-    page_title="Data Visualization",
-    page_icon=":bar_chart:",
+    page_title="Inflation and Unemployment Analysis",
+    page_icon="💹",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+
 page_bg_img = '''
 <style>
 #MainMenu {visibility: hidden;}
@@ -40,49 +38,24 @@ background-repeat: no-repeat;
 '''
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-fig1 = px.box(df, 
-              x='Country', 
-              y='GDP_growth', 
-              color='Country',
-              template='plotly_white')
-plt.xlabel("GDP Growth (%)", fontweight='bold', fontsize=14, color='#222831')
+
+mean_inflation = df.groupby('Country')['Inflation_consumer_prices'].mean()
+mean_inflation_sorted = mean_inflation.sort_values(ascending=True)
+
+selected_countries = st.multiselect("Select Countries", mean_inflation_sorted.index)
+filtered_data = mean_inflation_sorted[selected_countries]
+
+fig1, ax = plt.subplots(figsize=(10, len(filtered_data) * 0.5))
+colors = plt.cm.viridis(np.linspace(0, 1, len(filtered_data)))
+ax.barh(filtered_data.index, filtered_data.values, color=colors)
+
+plt.xlabel('Mean Inflation rates (%)', fontweight='bold', fontsize=14, color='#222831')
 plt.ylabel('Country', fontweight='bold', fontsize=14, color='#222831')
-plt.title("GDP Growth by Country", fontweight='bold', loc='center', color='#FF4500', fontsize=18)
+plt.title('Mean Inflation Consumer Prices (1990-2020)', fontweight='bold', loc='center', color='#FF4500', fontsize=18)
 plt.tick_params(axis='both', labelsize=12, colors='#393e46')
+plt.grid(True, axis='x', linestyle='--', color='#e3e3e3')
+plt.gca().spines['right'].set_visible(False)
+plt.gca().spines['top'].set_visible(False)
 
-
-fig1.update_traces(boxpoints=False)  
-fig1.update_layout(
-    font_family="Roboto",
-    font_color="darkblue",
-    title_font_family="Roboto",
-    title_font_color="red"
-)
-colors = ['#EE2C2C', '#00F5FF', '#CD853F', '#00CD00']
-
-st.write(fig1)
-ratings = df['Rating_economy'].unique()
-
-
-selected_rating = st.sidebar.selectbox('Select a Rating Economy', ratings)
-
-
-subset = df[df['Rating_economy'] == selected_rating]
-
-plt.figure(figsize=(10, 6))
-
-# Plotting
-sns.kdeplot(subset['GDP_growth'], fill=True, color=colors[ratings.tolist().index(selected_rating)], alpha=0.4, linewidth=1.4,
-            label=f'Rating economy: {selected_rating}')
-
-plt.title('Distribution of GDP growth rate according to rating economy\nData Source: World Bank',
-          fontweight='bold', color='#FF5733', fontsize=22)
-plt.xlabel('GDP Growth (%)', fontsize=16, color='#00AA00', fontweight='bold')
-plt.ylabel('Density', fontsize=16, color='#00AA00', fontweight='bold')
-plt.legend(title='Rating economy')
-plt.minorticks_on()
-plt.grid(True, which='both', linestyle='--', alpha=0.8)
-plt.tight_layout()
-
-
-st.pyplot(plt)
+st.pyplot(fig1)
+st.markdown("---")
