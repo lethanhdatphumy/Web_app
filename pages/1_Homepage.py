@@ -44,8 +44,6 @@ st.header("Data Overview")
 data["Year"] = data["Year"].astype(str)
 st.write(data)
 
-       
-st.sidebar.image(use_column_width=True)
 st.sidebar.markdown("## Sidebar")
 st.sidebar.info("Select pages above <3")
 
