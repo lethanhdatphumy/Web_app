@@ -39,8 +39,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 data = pd.read_csv("GOD'sDATA.csv")
 
 
-st.title("Welcome to My" )
-st.header("Dataset ")
+st.title("Welcome to My Dataset" )
 data["Year"] = data["Year"].astype(str)
 st.write(data)
 
