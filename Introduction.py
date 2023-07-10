@@ -1,63 +1,58 @@
 import streamlit as st
-import pandas as pd
-from PIL import Image
+from streamlit_folium import folium_static
+import folium
 
 # Set page configuration
 st.set_page_config(
-    page_title="Analysis of selected Socio-Economic Issues in ASEAN",
-    page_icon=":wave:",
+    page_title="ASEAN Map",
+    page_icon=":world_map:",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Define background images and styles
-page_bg_img = '''
-<style>
-body {
-    background-image: url("https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sidebar .sidebar-content {
-    background-image: url("https://images.unsplash.com/photo-1486520299386-6d106b22014b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.stImage > img {
-    border-radius: 50%;
-    width: 150px;
-}
-
-</style>
-'''
-
-# Apply background styles
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 # Display title and header
-st.title("Analysis of Selected Socio-Economic Issues in ASEAN")
-st.header("Using Python, CSS, and HTML for Plotting")
+st.title("ASEAN Map")
+st.header("Interactive Map of ASEAN Countries")
 
-# Display an image
-image = Image.open('ASEAN Welcome page.jpg')
-st.image(image, caption='Sunrise by the mountains')
+# Create a map centered around ASEAN
+map_asean = folium.Map(location=[1.35, 103.8], zoom_start=5, control_scale=True)
 
-# Add interactive elements to your app
-selected_option = st.selectbox("Select an option", ["Option 1", "Option 2", "Option 3"])
+# Define ASEAN country coordinates
+country_coordinates = {
+    "Brunei": (4.5353, 114.7277),
+    "Cambodia": (12.5657, 104.9910),
+    "Indonesia": (-0.7893, 113.9213),
+    "Laos": (19.8563, 102.4955),
+    "Malaysia": (4.2105, 101.9758),
+    "Myanmar": (21.9162, 95.9560),
+    "Philippines": (12.8797, 121.7740),
+    "Singapore": (1.3521, 103.8198),
+    "Thailand": (15.8700, 100.9925),
+    "Vietnam": (14.0583, 108.2772)
+}
 
-if selected_option == "Option 1":
-    st.write("You selected Option 1.")
-elif selected_option == "Option 2":
-    st.write("You selected Option 2.")
-else:
-    st.write("You selected Option 3.")
+# Define colors for each country
+country_colors = {
+    "Brunei": "green",
+    "Cambodia": "blue",
+    "Indonesia": "red",
+    "Laos": "orange",
+    "Malaysia": "purple",
+    "Myanmar": "yellow",
+    "Philippines": "pink",
+    "Singapore": "darkblue",
+    "Thailand": "lightgreen",
+    "Vietnam": "darkred"
+}
 
-# Add plots, tables, or any other content you want
+# Add markers for each ASEAN country with assigned colors
+for country, coordinates in country_coordinates.items():
+    color = country_colors.get(country, "green")
+    folium.Marker(
+        location=coordinates,
+        tooltip=country,
+        icon=folium.Icon(color=color, icon="info-sign")
+    ).add_to(map_asean)
 
-# Finally, run your Streamlit app
-if __name__ == "__main__":
-    main()
+# Display the map
+folium_static(map_asean)
