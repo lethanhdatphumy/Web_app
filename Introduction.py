@@ -6,14 +6,30 @@ import folium
 st.set_page_config(
     page_title="ASEAN Map",
     page_icon=":world_map:",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    
 )
 
 # Display title and header
 st.title("ASEAN Map")
 st.header("Interactive Map of ASEAN Countries")
+page_bg_img = '''
+<style>
+[data-testid="stAppViewContainer"]  {
+background-image:url("https://i.pinimg.com/originals/8c/56/a9/8c56a962d578e97c357ddb761052d5ea.gif");
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
 
+}
+[data-testid="stHeader"]{
+background-color : rgba(0,0,0,0)
+    
+}
+
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 # Create a map centered around ASEAN
 map_asean = folium.Map(location=[1.35, 103.8], zoom_start=5, control_scale=True)
 

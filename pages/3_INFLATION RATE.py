@@ -1,61 +1,40 @@
-import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
+import streamlit as st
 
 
-df = pd.read_csv("GOD'sDATA.csv")
-df.columns = df.columns.str.strip()
+# File uploader to allow users to update data from the web
+uploaded_file = st.file_uploader("Update your data", type="csv")
 
-st.set_page_config(
-    page_title="Inflation and Unemployment Analysis",
-    page_icon="💹",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+if uploaded_file is not None:
+    df = pd.read_csv(uploaded_file)
+else:
+    df = pd.read_csv(r"GOD'sDATA.csv")
+st.sidebar.header('User Input Features')
+selected_years = st.sidebar.slider('Year range', 1990, 2020, (1990, 2020))
 
+df_selected = df[(df['Year'] >= selected_years[0]) & (df['Year'] <= selected_years[1])]
 
-page_bg_img = '''
-<style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-[data-testid="stAppViewContainer"]  {
-background-image: url("https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80");
-background-size:cover;
-background-repeat: no-repeat;
-}
-[data-testid="stHeader"]{
-background-color : rgba(0,0,0,0)
-    
-}
-[data-testid="stSidebar"]{
-background-image: url("https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80");
-background-size:cover;
-background-repeat: no-repeat;
-}
+mean_inflation = df_selected.groupby('Country')['Inflation_consumer_prices'].mean()
 
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
-
-mean_inflation = df.groupby('Country')['Inflation_consumer_prices'].mean()
 mean_inflation_sorted = mean_inflation.sort_values(ascending=True)
 
-selected_countries = st.multiselect("Select Countries", mean_inflation_sorted.index)
-filtered_data = mean_inflation_sorted[selected_countries]
+mean_inflation_sorted = mean_inflation_sorted.reset_index()
 
-fig1, ax = plt.subplots(figsize=(10, len(filtered_data) * 0.5))
-colors = plt.cm.viridis(np.linspace(0, 1, len(filtered_data)))
-ax.barh(filtered_data.index, filtered_data.values, color=colors)
+fig = px.bar(mean_inflation_sorted, y='Country', x='Inflation_consumer_prices', orientation='h', 
+             color='Inflation_consumer_prices', color_continuous_scale=px.colors.sequential.Plasma)
 
-plt.xlabel('Mean Inflation rates (%)', fontweight='bold', fontsize=14, color='#222831')
-plt.ylabel('Country', fontweight='bold', fontsize=14, color='#222831')
-plt.title('Mean Inflation Consumer Prices (1990-2020)', fontweight='bold', loc='center', color='#FF4500', fontsize=18)
-plt.tick_params(axis='both', labelsize=12, colors='#393e46')
-plt.grid(True, axis='x', linestyle='--', color='#e3e3e3')
-plt.gca().spines['right'].set_visible(False)
-plt.gca().spines['top'].set_visible(False)
+fig.update_layout(
+    title_text='Mean Inflation Consumer Prices (Selected Years)',
+    xaxis_title="Mean Inflation rates (%)",
+    yaxis_title="Country",
+    font=dict(
+        family="Courier New, monospace",
+        size=12,
+        color="RebeccaPurple"
+    ),
+)
 
-st.pyplot(fig1)
-st.markdown("---")
+fig.update_yaxes(automargin=True)
+st.plotly_chart(fig)
