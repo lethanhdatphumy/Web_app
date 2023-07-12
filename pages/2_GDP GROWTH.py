@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.figure_factory as ff
+import plotly.graph_objects as go
 
 st.set_page_config(page_title="Data Visualization")
 
@@ -21,19 +21,14 @@ subset = df[df['Rating_economy'] == selected_rating]
 # Additional interactivity
 st.header("Additional Interactivity")
 
-# Add a slider to adjust the bandwidth parameter of the KDE plot
-bandwidth = st.slider("Bandwidth", min_value=0.1, max_value=5.0, step=0.1, value=1.0)
-
-# Update the plot with the new bandwidth and color
-colors = ['#FA8072'] # Salmon color
-fig = ff.create_distplot([subset['GDP_growth']], ['GDP Growth'], bin_size=bandwidth, 
-                         show_curve=True, colors=colors)
+# Plot Histogram
+fig = go.Figure(data=[go.Histogram(x=subset['GDP_growth'], nbinsx=20)])
 
 # Update layout for title and axes labels
 fig.update_layout(
     title_text='GDP Growth Distribution',
     xaxis_title='GDP Growth',
-    yaxis_title='Density',
+    yaxis_title='Count',
 )
 
 # Display the updated plot using Streamlit's plotting function
