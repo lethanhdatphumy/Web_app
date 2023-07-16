@@ -6,7 +6,7 @@ uploaded_file = st.file_uploader("Update your data", type="csv")
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 else:
-    df = pd.read_csv(r"'sDATA.csv")
+    df = pd.read_csv(r"GOD'sDATA.csv")
 
 
 st.sidebar.header('User Input Parameters')

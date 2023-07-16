@@ -18,8 +18,7 @@ selected_rating = st.sidebar.selectbox('Select Rating Economy', df['Rating_econo
 # Filter the data based on the selected rating
 subset = df[df['Rating_economy'] == selected_rating]
 
-# Additional interactivity
-st.header("Additional Interactivity")
+
 
 # Plot Histogram
 fig = go.Figure(data=[go.Histogram(x=subset['GDP_growth'], nbinsx=20)])
